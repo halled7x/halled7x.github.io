@@ -1,0 +1,1683 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>推特黑椒盖饭 - 美食品牌 | 灶台边的一勺人间烟火</title>
+<meta name="description" content="推特黑椒盖饭官方网站，专注黑椒盖饭料理研究与家庭复刻，以原创高清影像记录灶台烟火，汇聚专业创作者与真实食客，打造值得信赖的美食内容生态。">
+<meta name="keywords" content="推特黑椒盖饭,黑椒盖饭,美食品牌,官方网站,品牌故事,创作者社区,原创影像">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23361d0e'/%3E%3Ccircle cx='32' cy='34' r='17' fill='%23f2b23e'/%3E%3Ccircle cx='25' cy='30' r='3' fill='%23361d0e'/%3E%3Ccircle cx='39' cy='30' r='3' fill='%23361d0e'/%3E%3Cpath d='M24 40q8 7 16 0' stroke='%23361d0e' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Crect x='26' y='8' width='12' height='5' rx='2' fill='%23e0623a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bhj-ink:#2c1a0e;
+  --bhj-ink-soft:#5d4632;
+  --bhj-cream:#fbf4e8;
+  --bhj-sand:#f3e6d2;
+  --bhj-amber:#e0912f;
+  --bhj-amber-deep:#c46f16;
+  --bhj-red:#c4482c;
+  --bhj-green:#5d7d4a;
+  --bhj-line:#e5d5bd;
+  --bhj-shadow:0 14px 40px -18px rgba(60,32,10,.45);
+  --bhj-radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--bhj-cream);
+  color:var(--bhj-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ============ 吸顶头部（公告条 + 页头） ============ */
+.bhj-sticky{position:sticky;top:0;z-index:60}
+.bhj-notice{
+  background:linear-gradient(90deg,#3a1f10,#5a2f14 45%,#3a1f10);
+  color:#f7e7cf;
+  font-size:13.5px;
+  letter-spacing:.02em;
+}
+.bhj-notice-inner{
+  max-width:1200px;margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.bhj-notice-tag{
+  flex:0 0 auto;background:var(--bhj-amber);color:#3a1f10;
+  font-weight:700;font-size:12px;padding:1px 9px;border-radius:99px;
+}
+.bhj-notice-list{display:flex;gap:26px;flex-wrap:wrap;overflow:hidden}
+.bhj-notice-list li{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.bhj-notice-list li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--bhj-amber)}
+.bhj-notice-list strong{color:#ffd79a;font-weight:600}
+
+.bhj-header{
+  background:rgba(251,244,232,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--bhj-line);
+}
+.bhj-header-inner{
+  max-width:1200px;margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;gap:28px;
+}
+.bhj-logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.bhj-logo-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:radial-gradient(circle at 35% 30%,#f4bd5a,#c46f16 70%);
+  display:grid;place-items:center;color:#3a1f10;font-weight:800;font-size:19px;
+  box-shadow:inset 0 -3px 0 rgba(0,0,0,.15);
+}
+.bhj-logo-text b{display:block;font-size:17.5px;letter-spacing:.03em;line-height:1.3}
+.bhj-logo-text span{display:block;font-size:10.5px;letter-spacing:.22em;color:var(--bhj-ink-soft);text-transform:uppercase}
+
+.bhj-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:wrap}
+.bhj-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14.5px;color:var(--bhj-ink-soft);
+  transition:.22s;position:relative;
+}
+.bhj-nav a:hover,.bhj-nav a:focus-visible{background:var(--bhj-sand);color:var(--bhj-ink);outline:none}
+
+.bhj-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.bhj-search{position:relative;display:flex;align-items:center}
+.bhj-search input{
+  width:190px;padding:8px 36px 8px 14px;border-radius:99px;border:1px solid var(--bhj-line);
+  background:#fff;font-size:13.5px;color:var(--bhj-ink);transition:.25s;outline:none;
+}
+.bhj-search input:focus{width:238px;border-color:var(--bhj-amber);box-shadow:0 0 0 3px rgba(224,145,47,.16)}
+.bhj-search button{
+  position:absolute;right:5px;width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;color:var(--bhj-amber-deep);font-size:15px;
+}
+.bhj-search button:hover{background:var(--bhj-sand)}
+.bhj-search-tip{
+  position:absolute;top:calc(100% + 8px);right:0;width:238px;background:#fff;
+  border:1px solid var(--bhj-line);border-radius:12px;box-shadow:var(--bhj-shadow);
+  padding:9px;font-size:13px;color:var(--bhj-ink-soft);display:none;
+}
+.bhj-search-tip.is-open{display:block}
+.bhj-search-tip b{color:var(--bhj-amber-deep)}
+.bhj-btn-ghost{
+  padding:8px 16px;border-radius:99px;border:1px solid var(--bhj-ink);font-size:13.5px;
+  transition:.22s;white-space:nowrap;
+}
+.bhj-btn-ghost:hover{background:var(--bhj-ink);color:var(--bhj-cream)}
+.bhj-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--bhj-line);background:#fff;flex-direction:column;gap:4px;align-items:center;justify-content:center}
+.bhj-burger span{width:17px;height:2px;background:var(--bhj-ink);border-radius:2px;transition:.24s}
+.bhj-burger.is-open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.bhj-burger.is-open span:nth-child(2){opacity:0}
+.bhj-burger.is-open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.bhj-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--bhj-line)}
+.bhj-mobile-nav.is-open{display:block}
+.bhj-mobile-nav a{display:block;padding:13px 24px;border-bottom:1px solid #f1e6d5;font-size:14.5px;color:var(--bhj-ink-soft)}
+.bhj-mobile-nav a:last-child{border-bottom:none}
+
+/* ============ 通用容器 ============ */
+.bhj-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.bhj-section{padding:74px 0}
+.bhj-section--tint{background:linear-gradient(180deg,#fdf7ee,#f6ebda)}
+.bhj-section--dark{background:#2c1a0e;color:#f4e6d2}
+.bhj-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.16em;
+  color:var(--bhj-amber-deep);font-weight:600;text-transform:uppercase;
+}
+.bhj-eyebrow::before{content:"";width:26px;height:2px;background:var(--bhj-amber)}
+.bhj-section--dark .bhj-eyebrow{color:#f0b95e}
+.bhj-h2{font-size:clamp(24px,3vw,34px);line-height:1.34;margin:10px 0 14px;letter-spacing:.01em;font-weight:800}
+.bhj-lead{font-size:15.5px;color:var(--bhj-ink-soft);max-width:760px}
+.bhj-section--dark .bhj-lead{color:#d8c3ab}
+.bhj-head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+
+/* ============ 首屏 ============ */
+.bhj-hero{position:relative;overflow:hidden}
+.bhj-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(720px 380px at 88% 8%,rgba(224,145,47,.22),transparent 65%),
+    radial-gradient(560px 320px at 6% 92%,rgba(93,125,74,.14),transparent 70%);
+  pointer-events:none;
+}
+.bhj-hero-inner{
+  position:relative;max-width:1200px;margin:0 auto;padding:58px 24px 66px;
+  display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;
+}
+.bhj-hero-badge{
+  display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--bhj-line);
+  border-radius:99px;padding:5px 14px 5px 6px;font-size:12.5px;color:var(--bhj-ink-soft);
+  box-shadow:0 6px 18px -12px rgba(60,32,10,.5);
+}
+.bhj-hero-badge i{
+  font-style:normal;background:var(--bhj-red);color:#fff;font-size:11px;font-weight:700;
+  padding:2px 8px;border-radius:99px;letter-spacing:.05em;
+}
+.bhj-h1{
+  font-size:clamp(38px,5.6vw,64px);line-height:1.1;letter-spacing:-.01em;
+  margin:18px 0 16px;font-weight:900;
+}
+.bhj-h1 em{
+  font-style:normal;
+  background:linear-gradient(180deg,transparent 62%,rgba(224,145,47,.42) 62%);
+  padding:0 2px;
+}
+.bhj-hero-sub{font-size:16.5px;color:var(--bhj-ink-soft);max-width:520px;margin-bottom:14px}
+.bhj-hero-intro{
+  font-size:14.5px;color:var(--bhj-ink-soft);max-width:540px;
+  border-left:3px solid var(--bhj-amber);padding-left:14px;margin-bottom:26px;
+}
+.bhj-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.bhj-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:99px;
+  font-size:14.5px;font-weight:600;transition:.22s;border:1px solid transparent;
+}
+.bhj-btn--primary{background:var(--bhj-ink);color:#ffeeD2;box-shadow:0 12px 26px -14px rgba(44,26,14,.9)}
+.bhj-btn--primary:hover{background:#4a2c15;transform:translateY(-2px)}
+.bhj-btn--amber{background:linear-gradient(135deg,#f0ae42,#d07f1c);color:#2c1a0e;box-shadow:0 12px 26px -14px rgba(196,111,22,.95)}
+.bhj-btn--amber:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.bhj-btn--line{border-color:var(--bhj-line);background:#fff;color:var(--bhj-ink)}
+.bhj-btn--line:hover{border-color:var(--bhj-amber);background:#fffaf1}
+.bhj-hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.bhj-stat b{display:block;font-size:27px;font-weight:900;letter-spacing:-.01em;color:var(--bhj-amber-deep)}
+.bhj-stat span{font-size:12.5px;color:var(--bhj-ink-soft);letter-spacing:.04em}
+
+.bhj-hero-visual{position:relative}
+.bhj-hero-figure{
+  border-radius:26px;overflow:hidden;box-shadow:var(--bhj-shadow);border:6px solid #fff;
+  background:#3a1f10;position:relative;
+}
+.bhj-hero-figure img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.bhj-hero-figure-tag{
+  position:absolute;left:14px;bottom:14px;background:rgba(44,26,14,.82);color:#ffe6bd;
+  font-size:12px;padding:5px 12px;border-radius:99px;letter-spacing:.04em;backdrop-filter:blur(4px);
+}
+.bhj-hero-float{
+  position:absolute;right:-12px;bottom:-26px;background:#fff;border-radius:16px;
+  padding:12px 16px;box-shadow:var(--bhj-shadow);display:flex;gap:11px;align-items:center;
+  border:1px solid var(--bhj-line);max-width:236px;
+}
+.bhj-hero-float .bhj-avatar{border:2px solid #fff;box-shadow:0 0 0 1px var(--bhj-line)}
+.bhj-hero-float p{font-size:12px;line-height:1.5;color:var(--bhj-ink-soft)}
+.bhj-hero-float p b{display:block;font-size:13px;color:var(--bhj-ink)}
+
+.bhj-avatar{
+  width:38px;height:38px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  font-size:14px;font-weight:800;color:#fff;letter-spacing:.02em;
+}
+.bhj-avatar--a{background:linear-gradient(135deg,#e0912f,#a4540f)}
+.bhj-avatar--b{background:linear-gradient(135deg,#5d7d4a,#3e5c30)}
+.bhj-avatar--c{background:linear-gradient(135deg,#c4482c,#8d2f1b)}
+.bhj-avatar--d{background:linear-gradient(135deg,#4a6b8a,#2f4a63)}
+.bhj-avatar--e{background:linear-gradient(135deg,#8a5a4a,#5c3428)}
+.bhj-avatar--f{background:linear-gradient(135deg,#6b5a8a,#463a63)}
+
+/* ============ 关键词解析（长文） ============ */
+.bhj-about{padding:70px 0}
+.bhj-about-grid{display:grid;grid-template-columns:1fr 1.55fr;gap:52px;align-items:start}
+.bhj-about-aside{position:sticky;top:132px}
+.bhj-about-aside-card{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:20px;padding:24px;
+  box-shadow:var(--bhj-shadow);
+}
+.bhj-about-aside-card h3{font-size:16px;margin-bottom:12px}
+.bhj-about-aside-card p{font-size:13.5px;color:var(--bhj-ink-soft);margin-bottom:10px}
+.bhj-about-aside-card p:last-child{margin-bottom:0}
+.bhj-about-aside-card strong{color:var(--bhj-amber-deep)}
+.bhj-about-prose p{font-size:15px;color:#4b3826;margin-bottom:17px;text-align:justify}
+.bhj-about-prose h3{font-size:18.5px;margin:28px 0 12px;display:flex;align-items:center;gap:9px}
+.bhj-about-prose h3::before{
+  content:"";width:9px;height:9px;border-radius:3px;background:var(--bhj-amber);
+  transform:rotate(45deg);flex:0 0 auto;
+}
+.bhj-about-prose ul{display:grid;gap:9px;margin:0 0 18px}
+.bhj-about-prose ul li{
+  font-size:14.5px;color:#4b3826;padding-left:20px;position:relative;
+}
+.bhj-about-prose ul li::before{
+  content:"";position:absolute;left:2px;top:11px;width:7px;height:7px;border-radius:50%;
+  border:2px solid var(--bhj-amber);background:#fff;
+}
+.bhj-quote{
+  background:linear-gradient(135deg,#fdf3e2,#f8e7cd);border-left:4px solid var(--bhj-amber);
+  border-radius:0 16px 16px 0;padding:18px 22px;margin:22px 0;
+}
+.bhj-quote p{font-size:14.5px;color:#5a4128;margin:0;font-style:italic}
+
+/* ============ 视频卡片 ============ */
+.bhj-card{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:var(--bhj-radius);
+  overflow:hidden;transition:transform .28s,box-shadow .28s;display:flex;flex-direction:column;
+}
+.bhj-card:hover{transform:translateY(-5px);box-shadow:var(--bhj-shadow)}
+.bhj-cover{position:relative;overflow:hidden;background:#3a1f10}
+.bhj-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .5s}
+.bhj-card:hover .bhj-cover img{transform:scale(1.05)}
+.bhj-cover::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 46%,rgba(30,15,5,.55));
+  pointer-events:none;
+}
+.bhj-cover-tag{
+  position:absolute;left:11px;top:11px;z-index:2;background:rgba(251,244,232,.94);color:#5a2f14;
+  font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:99px;letter-spacing:.03em;
+}
+.bhj-cover-dur{
+  position:absolute;right:11px;bottom:11px;z-index:2;background:rgba(30,15,5,.78);color:#ffe9c8;
+  font-size:11px;padding:2px 8px;border-radius:6px;font-variant-numeric:tabular-nums;
+}
+.bhj-play{
+  position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:50px;height:50px;border-radius:50%;background:rgba(251,244,232,.9);
+  display:grid;place-items:center;color:#3a1f10;font-size:16px;
+  box-shadow:0 8px 22px -10px rgba(0,0,0,.7);transition:.25s;padding-left:4px;
+}
+.bhj-card:hover .bhj-play{background:var(--bhj-amber);transform:translate(-50%,-50%) scale(1.08)}
+.bhj-card-body{padding:16px 17px 17px;display:flex;flex-direction:column;flex:1}
+.bhj-card-body h3{font-size:16.5px;line-height:1.45;margin-bottom:7px}
+.bhj-card-body h3 a:hover{color:var(--bhj-amber-deep)}
+.bhj-card-desc{font-size:13px;color:var(--bhj-ink-soft);margin-bottom:12px;flex:1}
+.bhj-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px}
+.bhj-tag{
+  font-size:11.5px;padding:2.5px 9px;border-radius:99px;background:var(--bhj-sand);
+  color:#7a5630;letter-spacing:.02em;
+}
+.bhj-card-meta{
+  display:flex;align-items:center;gap:8px;font-size:12px;color:#8a6d4e;
+  border-top:1px dashed var(--bhj-line);padding-top:12px;
+}
+.bhj-card-meta .bhj-avatar{width:26px;height:26px;font-size:11.5px}
+.bhj-card-meta span{white-space:nowrap}
+.bhj-card-actions{margin-left:auto;display:flex;gap:5px}
+.bhj-icon-btn{
+  width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-size:13px;
+  color:#8a6d4e;transition:.2s;border:1px solid transparent;
+}
+.bhj-icon-btn:hover{background:var(--bhj-sand);color:var(--bhj-amber-deep)}
+.bhj-icon-btn.is-active{color:var(--bhj-red);background:#fdece7}
+
+/* 焦点视频 */
+.bhj-focus-grid{display:grid;grid-template-columns:1.32fr 1fr 1fr;gap:20px}
+.bhj-focus-main{grid-row:span 2;display:flex}
+.bhj-focus-main .bhj-card{width:100%}
+.bhj-focus-main .bhj-cover img{aspect-ratio:4/3;height:100%}
+.bhj-focus-main .bhj-card-body h3{font-size:21px}
+.bhj-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bhj-video-grid--2{grid-template-columns:repeat(2,1fr)}
+
+/* ============ 专题 ============ */
+.bhj-topics{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bhj-topic{
+  border-radius:20px;padding:24px;position:relative;overflow:hidden;min-height:206px;
+  display:flex;flex-direction:column;justify-content:flex-end;color:#fff;border:1px solid var(--bhj-line);
+  transition:transform .28s,box-shadow .28s;
+}
+.bhj-topic:hover{transform:translateY(-5px);box-shadow:var(--bhj-shadow)}
+.bhj-topic-bg{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;z-index:0}
+.bhj-topic::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(44,26,14,.12) 10%,rgba(30,15,5,.88) 92%);
+}
+.bhj-topic>*{position:relative;z-index:2}
+.bhj-topic-status{
+  position:absolute;right:16px;top:16px;font-size:11px;padding:3px 10px;border-radius:99px;
+  background:rgba(224,145,47,.94);color:#2c1a0e;font-weight:700;z-index:3;
+}
+.bhj-topic h3{font-size:18px;line-height:1.4;margin-bottom:6px}
+.bhj-topic p{font-size:12.5px;color:#e6d3bb;line-height:1.6}
+
+/* ============ 创作者 ============ */
+.bhj-creators{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bhj-creator{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:var(--bhj-radius);
+  padding:22px;transition:.28s;position:relative;overflow:hidden;
+}
+.bhj-creator:hover{transform:translateY(-4px);box-shadow:var(--bhj-shadow);border-color:#e8cfa8}
+.bhj-creator-top{display:flex;align-items:center;gap:13px;margin-bottom:13px}
+.bhj-creator-top .bhj-avatar{width:52px;height:52px;font-size:18px}
+.bhj-creator-top h3{font-size:16.5px;line-height:1.35}
+.bhj-creator-field{font-size:12px;color:var(--bhj-amber-deep);letter-spacing:.04em}
+.bhj-creator p{font-size:13px;color:var(--bhj-ink-soft);margin-bottom:14px;min-height:60px}
+.bhj-creator-foot{
+  display:flex;justify-content:space-between;font-size:12.5px;color:#8a6d4e;
+  border-top:1px dashed var(--bhj-line);padding-top:12px;
+}
+.bhj-creator-foot b{color:var(--bhj-ink);font-size:14px}
+
+/* ============ 作品墙 ============ */
+.bhj-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.bhj-wall-item{
+  border-radius:14px;overflow:hidden;position:relative;border:1px solid var(--bhj-line);background:#3a1f10;
+}
+.bhj-wall-item img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;transition:transform .5s}
+.bhj-wall-item:hover img{transform:scale(1.07)}
+.bhj-wall-item figcaption{
+  position:absolute;inset:auto 0 0 0;padding:26px 12px 10px;font-size:12px;color:#ffe9c8;
+  background:linear-gradient(180deg,transparent,rgba(30,15,5,.86));
+}
+.bhj-wall-item--wide{grid-column:span 2}
+.bhj-wall-item--wide img{aspect-ratio:2/1}
+.bhj-wall-item--tall{grid-row:span 2}
+.bhj-wall-item--tall img{aspect-ratio:1/2.04}
+
+/* ============ 评价 ============ */
+.bhj-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bhj-review{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:16px;padding:20px;
+  display:flex;flex-direction:column;gap:12px;transition:.25s;
+}
+.bhj-review:hover{box-shadow:var(--bhj-shadow);transform:translateY(-3px)}
+.bhj-review-head{display:flex;align-items:center;gap:10px}
+.bhj-review-head .bhj-avatar{width:34px;height:34px;font-size:12.5px}
+.bhj-review-head b{font-size:13.5px;display:block;line-height:1.4}
+.bhj-review-head span{font-size:11.5px;color:#8a6d4e}
+.bhj-review-stars{margin-left:auto;color:var(--bhj-amber);font-size:12px;letter-spacing:1px}
+.bhj-review p{font-size:13.5px;color:#4b3826;line-height:1.7}
+.bhj-review em{font-style:normal;font-size:11.5px;color:#8a6d4e;border-top:1px dashed var(--bhj-line);padding-top:9px}
+
+/* ============ 灵感 / 工具 ============ */
+.bhj-ideas{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.bhj-idea{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:16px;padding:22px;
+  display:flex;gap:16px;align-items:flex-start;transition:.25s;
+}
+.bhj-idea:hover{border-color:var(--bhj-amber);background:#fffdf8}
+.bhj-idea-icon{
+  width:44px;height:44px;flex:0 0 auto;border-radius:12px;display:grid;place-items:center;
+  font-size:19px;background:linear-gradient(135deg,#fbe7c8,#f3d4a3);color:#8a4d10;
+}
+.bhj-idea h3{font-size:15.5px;margin-bottom:5px}
+.bhj-idea p{font-size:13px;color:var(--bhj-ink-soft);margin-bottom:9px}
+.bhj-idea-btn{font-size:12.5px;color:var(--bhj-amber-deep);font-weight:600;display:inline-flex;gap:4px;align-items:center}
+.bhj-idea-btn:hover{text-decoration:underline}
+
+/* ============ 动态 ============ */
+.bhj-news{display:grid;gap:0;border-top:1px solid var(--bhj-line)}
+.bhj-news-item{
+  display:grid;grid-template-columns:120px 1fr auto;gap:22px;align-items:center;
+  padding:19px 4px;border-bottom:1px solid var(--bhj-line);transition:.22s;
+}
+.bhj-news-item:hover{background:#fffdf7}
+.bhj-news-date{font-size:12.5px;color:#8a6d4e;font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.bhj-news-item h3{font-size:15.5px;margin-bottom:3px}
+.bhj-news-item p{font-size:12.5px;color:var(--bhj-ink-soft)}
+.bhj-news-badge{
+  font-size:11px;padding:3px 10px;border-radius:99px;background:var(--bhj-sand);color:#7a5630;
+  white-space:nowrap;
+}
+
+/* ============ 合作 ============ */
+.bhj-partners{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.bhj-partner{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:12px;padding:16px 10px;
+  text-align:center;font-size:13px;color:#7a5630;transition:.22s;font-weight:600;
+}
+.bhj-partner:hover{border-color:var(--bhj-amber);color:var(--bhj-amber-deep);background:#fffbf3}
+
+/* ============ FAQ ============ */
+.bhj-faq{display:grid;gap:11px;max-width:860px}
+.bhj-faq details{
+  background:#fff;border:1px solid var(--bhj-line);border-radius:13px;overflow:hidden;transition:.22s;
+}
+.bhj-faq details[open]{border-color:#e8cfa8;box-shadow:0 10px 26px -18px rgba(60,32,10,.55)}
+.bhj-faq summary{
+  list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-size:15px;font-weight:600;
+  position:relative;user-select:none;
+}
+.bhj-faq summary::-webkit-details-marker{display:none}
+.bhj-faq summary::after{
+  content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);
+  font-size:19px;color:var(--bhj-amber-deep);font-weight:400;transition:.24s;
+}
+.bhj-faq details[open] summary::after{content:"−"}
+.bhj-faq details p{padding:0 20px 18px;font-size:13.5px;color:var(--bhj-ink-soft)}
+
+/* ============ CTA / 联系 ============ */
+.bhj-cta{
+  border-radius:26px;padding:42px;background:
+    radial-gradient(600px 260px at 88% 0%,rgba(224,145,47,.28),transparent 68%),
+    linear-gradient(135deg,#33200f,#4a2c15);
+  color:#f7e8d2;display:grid;grid-template-columns:1.4fr auto;gap:30px;align-items:center;
+}
+.bhj-cta h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:10px;line-height:1.35}
+.bhj-cta p{font-size:14px;color:#dcc5aa;max-width:600px}
+.bhj-cta-actions{display:flex;gap:11px;flex-wrap:wrap}
+.bhj-contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.bhj-contact-item{background:#fff;border:1px solid var(--bhj-line);border-radius:14px;padding:18px}
+.bhj-contact-item b{display:block;font-size:13px;color:#8a6d4e;margin-bottom:5px;font-weight:500}
+.bhj-contact-item span{font-size:15px;font-weight:700}
+
+/* ============ 页脚 ============ */
+.bhj-footer{background:#241408;color:#c8b49c;padding:56px 0 26px;font-size:13.5px}
+.bhj-footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:36px;margin-bottom:38px}
+.bhj-footer h3{font-size:13.5px;color:#f2dcbf;margin-bottom:14px;letter-spacing:.06em}
+.bhj-footer ul{display:grid;gap:9px}
+.bhj-footer a:hover{color:#f0b95e}
+.bhj-footer-brand b{color:#f7e6cd;font-size:17px;display:block;margin-bottom:10px}
+.bhj-footer-brand p{font-size:13px;line-height:1.8;max-width:340px;margin-bottom:12px}
+.bhj-footer-bottom{
+  border-top:1px solid #3a2413;padding-top:20px;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;font-size:12.5px;color:#a08b73;
+}
+
+/* ============ Toast / 弹窗 ============ */
+.bhj-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,24px);
+  background:#2c1a0e;color:#ffe9c8;padding:11px 22px;border-radius:99px;font-size:13.5px;
+  box-shadow:0 18px 40px -18px rgba(0,0,0,.75);opacity:0;pointer-events:none;
+  transition:.32s;z-index:200;white-space:nowrap;
+}
+.bhj-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.bhj-modal{
+  position:fixed;inset:0;z-index:180;display:none;place-items:center;padding:22px;
+  background:rgba(30,15,5,.62);backdrop-filter:blur(3px);
+}
+.bhj-modal.is-open{display:grid}
+.bhj-modal-card{
+  background:var(--bhj-cream);border-radius:20px;max-width:520px;width:100%;
+  padding:28px;position:relative;box-shadow:0 30px 70px -30px rgba(0,0,0,.8);
+  max-height:86vh;overflow:auto;
+}
+.bhj-modal-card h3{font-size:19px;margin-bottom:8px}
+.bhj-modal-card>p{font-size:13.5px;color:var(--bhj-ink-soft);margin-bottom:18px}
+.bhj-modal-close{
+  position:absolute;right:14px;top:14px;width:32px;height:32px;border-radius:50%;
+  display:grid;place-items:center;font-size:17px;color:#8a6d4e;background:#fff;border:1px solid var(--bhj-line);
+}
+.bhj-modal-close:hover{color:var(--bhj-red)}
+.bhj-field{display:grid;gap:6px;margin-bottom:14px}
+.bhj-field label{font-size:12.5px;color:#8a6d4e;font-weight:600}
+.bhj-field input,.bhj-field textarea,.bhj-field select{
+  width:100%;padding:10px 13px;border-radius:10px;border:1px solid var(--bhj-line);
+  background:#fff;font-size:13.5px;font-family:inherit;color:var(--bhj-ink);outline:none;
+}
+.bhj-field input:focus,.bhj-field textarea:focus,.bhj-field select:focus{border-color:var(--bhj-amber)}
+.bhj-field textarea{resize:vertical;min-height:84px}
+.bhj-share-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px}
+.bhj-share-btn{
+  flex:1;min-width:88px;padding:11px 8px;border-radius:11px;background:#fff;border:1px solid var(--bhj-line);
+  font-size:13px;text-align:center;transition:.2s;
+}
+.bhj-share-btn:hover{border-color:var(--bhj-amber);background:#fffaf1;color:var(--bhj-amber-deep)}
+.bhj-copy-row{display:flex;gap:8px}
+.bhj-copy-row input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid var(--bhj-line);background:#fff;font-size:12.5px;color:var(--bhj-ink-soft);outline:none}
+
+/* ============ 回到顶部 ============ */
+.bhj-top-btn{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--bhj-ink);color:#ffe9c8;display:grid;place-items:center;font-size:17px;
+  box-shadow:0 14px 30px -14px rgba(44,26,14,.9);opacity:0;pointer-events:none;
+  transition:.3s;z-index:70;
+}
+.bhj-top-btn.is-show{opacity:1;pointer-events:auto}
+.bhj-top-btn:hover{background:#4a2c15;transform:translateY(-3px)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .bhj-focus-grid{grid-template-columns:1fr 1fr}
+  .bhj-focus-main{grid-column:span 2;grid-row:auto}
+  .bhj-video-grid{grid-template-columns:repeat(2,1fr)}
+  .bhj-topics,.bhj-creators,.bhj-reviews{grid-template-columns:repeat(2,1fr)}
+  .bhj-partners{grid-template-columns:repeat(3,1fr)}
+  .bhj-about-grid{grid-template-columns:1fr;gap:34px}
+  .bhj-about-aside{position:static}
+}
+@media (max-width:900px){
+  .bhj-nav,.bhj-btn-ghost{display:none}
+  .bhj-burger{display:flex}
+  .bhj-hero-inner{grid-template-columns:1fr;gap:40px;padding-top:40px}
+  .bhj-hero-float{right:8px;bottom:-18px}
+  .bhj-footer-grid{grid-template-columns:1fr 1fr}
+  .bhj-cta{grid-template-columns:1fr;padding:32px}
+  .bhj-wall{grid-template-columns:repeat(2,1fr)}
+  .bhj-wall-item--tall{grid-row:auto}
+  .bhj-wall-item--tall img{aspect-ratio:1/1}
+  .bhj-wall-item--wide{grid-column:span 2}
+  .bhj-wall-item--wide img{aspect-ratio:16/9}
+  .bhj-ideas{grid-template-columns:1fr}
+  .bhj-contact-grid{grid-template-columns:1fr}
+  .bhj-search input{width:150px}
+  .bhj-search input:focus{width:170px}
+}
+@media (max-width:640px){
+  .bhj-section{padding:52px 0}
+  .bhj-notice-list{gap:16px;font-size:12.5px}
+  .bhj-notice-list li:nth-child(n+3){display:none}
+  .bhj-focus-grid,.bhj-video-grid,.bhj-topics,.bhj-creators,.bhj-reviews{grid-template-columns:1fr}
+  .bhj-focus-main{grid-column:auto}
+  .bhj-partners{grid-template-columns:repeat(2,1fr)}
+  .bhj-news-item{grid-template-columns:1fr;gap:6px;padding:16px 2px}
+  .bhj-news-badge{justify-self:start}
+  .bhj-header-inner{gap:12px;padding:10px 16px}
+  .bhj-search{display:none}
+  .bhj-hero-stats{gap:22px}
+  .bhj-footer-grid{grid-template-columns:1fr}
+  .bhj-cta-actions{width:100%}
+  .bhj-cta-actions .bhj-btn{flex:1;justify-content:center}
+  .bhj-hero-float{position:static;margin-top:16px;max-width:none}
+  .bhj-wrap{padding:0 16px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ================= 吸顶：公告条 + 页头 ================= -->
+<div class="bhj-sticky">
+  <div class="bhj-notice">
+    <div class="bhj-notice-inner">
+      <span class="bhj-notice-tag">官方发布</span>
+      <ul class="bhj-notice-list">
+        <li><strong>11/18</strong> 冬季专题《一锅到底》上线，收录 12 支黑椒盖饭复刻影像</li>
+        <li><strong>11/15</strong> 品牌故事影片《从一粒黑胡椒开始》完成首映</li>
+        <li><strong>11/11</strong> 社区投稿通道开放，本月主题「家里那口锅」</li>
+        <li><strong>11/06</strong> 创作者扶持计划第二期开始报名</li>
+      </ul>
+    </div>
+  </div>
+  <header class="bhj-header">
+    <div class="bhj-header-inner">
+      <a class="bhj-logo" href="#bhj-home" aria-label="推特黑椒盖饭官网首页">
+        <span class="bhj-logo-mark">椒</span>
+        <span class="bhj-logo-text">
+          <b>推特黑椒盖饭</b>
+          <span>Black Pepper Rice</span>
+        </span>
+      </a>
+      <nav class="bhj-nav" aria-label="主导航">
+        <a href="#bhj-home">首页</a>
+        <a href="#bhj-focus">焦点影像</a>
+        <a href="#bhj-topics">专题企划</a>
+        <a href="#bhj-creators">创作者</a>
+        <a href="#bhj-about">品牌解析</a>
+        <a href="#bhj-news">企业动态</a>
+        <a href="#bhj-faq">帮助</a>
+      </nav>
+      <div class="bhj-header-tools">
+        <form class="bhj-search" id="bhj-search-form" role="search" autocomplete="off">
+          <input type="search" id="bhj-search-input" placeholder="搜菜谱、创作者、专题" aria-label="站内搜索">
+          <button type="submit" aria-label="搜索">⌕</button>
+          <div class="bhj-search-tip" id="bhj-search-tip"></div>
+        </form>
+        <button class="bhj-btn-ghost" id="bhj-submit-btn" type="button">我要投稿</button>
+        <button class="bhj-burger" id="bhj-burger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="bhj-mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="bhj-mobile-nav" id="bhj-mobile-nav">
+      <a href="#bhj-home">首页</a>
+      <a href="#bhj-focus">焦点影像</a>
+      <a href="#bhj-topics">专题企划</a>
+      <a href="#bhj-creators">创作者</a>
+      <a href="#bhj-about">品牌解析</a>
+      <a href="#bhj-news">企业动态</a>
+      <a href="#bhj-faq">帮助</a>
+      <a href="#bhj-contact">联系与合作</a>
+    </div>
+  </header>
+</div>
+
+<!-- ================= 首屏 ================= -->
+<section class="bhj-hero" id="bhj-home">
+  <div class="bhj-hero-inner">
+    <div>
+      <span class="bhj-hero-badge"><i>官方网站</i> 推特黑椒盖饭 · 品牌视频门户</span>
+      <h1 class="bhj-h1">推特黑椒<em>盖饭</em></h1>
+      <p class="bhj-hero-sub">一勺黑椒，一锅热饭，一个把灶台烟火拍成影像的美食品牌。</p>
+      <p class="bhj-hero-intro">作为深耕黑椒盖饭这一垂直领域的原创美食品牌，推特黑椒盖饭以专业影像记录从选料到起锅的全过程，把家庭厨房里最难被复刻的那一点锅气，拆解成可学习、可回看、可持续的精品内容。这里是品牌官方网站，也是创作者与食客共同生长的内容社区。</p>
+      <div class="bhj-hero-actions">
+        <a class="bhj-btn bhj-btn--primary" href="#bhj-focus">进入焦点影像 <span aria-hidden="true">→</span></a>
+        <a class="bhj-btn bhj-btn--amber" href="#bhj-about">读懂品牌故事</a>
+        <a class="bhj-btn bhj-btn--line" href="#bhj-creators">认识创作者</a>
+      </div>
+      <div class="bhj-hero-stats">
+        <div class="bhj-stat"><b data-bhj-count="1860">0</b><span>原创影像条目</span></div>
+        <div class="bhj-stat"><b data-bhj-count="327">0</b><span>签约创作者（位）</span></div>
+        <div class="bhj-stat"><b data-bhj-count="94">0</b><span>内容好评率（%）</span></div>
+      </div>
+    </div>
+    <div class="bhj-hero-visual">
+      <figure class="bhj-hero-figure">
+        <img alt="黑椒盖饭在铸铁锅中翻炒起锅的暖色主视觉" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233a1f10'/%3E%3Cstop offset='1' stop-color='%236a3a16'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='0.5' cy='0.5' r='0.5'%3E%3Cstop offset='0' stop-color='%23f3b551' stop-opacity='0.85'/%3E%3Cstop offset='1' stop-color='%23f3b551' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23bg)'/%3E%3Cellipse cx='400' cy='300' rx='300' ry='210' fill='url(%23glow)'/%3E%3Ccircle cx='400' cy='318' r='168' fill='%231e1007'/%3E%3Ccircle cx='400' cy='310' r='152' fill='%23f4e3c2'/%3E%3Cg%3E%3Ccircle cx='366' cy='292' r='42' fill='%23fbf6e6'/%3E%3Ccircle cx='438' cy='300' r='46' fill='%23f8f0dc'/%3E%3Ccircle cx='404' cy='352' r='50' fill='%23fdf9ec'/%3E%3C/g%3E%3Cg fill='%236b3b1a'%3E%3Crect x='330' y='272' width='46' height='26' rx='8' transform='rotate(-14 353 285)'/%3E%3Crect x='414' y='258' width='52' height='28' rx='8' transform='rotate(11 440 272)'/%3E%3Crect x='388' y='330' width='58' height='27' rx='8' transform='rotate(-6 417 343)'/%3E%3C/g%3E%3Cg fill='%23c4482c'%3E%3Ccircle cx='352' cy='334' r='9'/%3E%3Ccircle cx='452' cy='352' r='8'/%3E%3Ccircle cx='416' cy='246' r='7'/%3E%3C/g%3E%3Cg stroke='%235d7d4a' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M340 246q22-26 42-6'/%3E%3Cpath d='M436 398q24-18 40 2'/%3E%3C/g%3E%3Cg fill='%23f6e7c8' opacity='0.55'%3E%3Ccircle cx='262' cy='176' r='7'/%3E%3Ccircle cx='540' cy='200' r='5'/%3E%3Ccircle cx='500' cy='132' r='4'/%3E%3Ccircle cx='300' cy='420' r='4'/%3E%3C/g%3E%3Crect x='676' y='252' width='12' height='150' rx='6' fill='%23a8783f' transform='rotate(24 682 327)'/%3E%3C/svg%3E">
+        <figcaption class="bhj-hero-figure-tag">品牌主视觉 · 铸铁锅与黑椒的第二次相遇</figcaption>
+      </figure>
+      <div class="bhj-hero-float">
+        <span class="bhj-avatar bhj-avatar--a">饭</span>
+        <p><b>本周新片已更新</b>《黑椒汁收浓的三个临界点》</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 品牌解析长文 ================= -->
+<section class="bhj-about" id="bhj-about">
+  <div class="bhj-wrap">
+    <div class="bhj-about-grid">
+      <aside class="bhj-about-aside">
+        <div class="bhj-about-aside-card">
+          <h3>品牌速览</h3>
+          <p><strong>品牌定位：</strong>黑椒盖饭垂直领域的美食内容品牌</p>
+          <p><strong>创立时间：</strong>2019 年，持续运营第七年</p>
+          <p><strong>内容主线：</strong>料理还原、食材溯源、厨房故事</p>
+          <p><strong>社区规模：</strong>327 位签约创作者，覆盖 26 个城市</p>
+          <p><strong>官方发布：</strong>每周三、周六各更新一期精品内容</p>
+        </div>
+      </aside>
+      <div class="bhj-about-prose">
+        <span class="bhj-eyebrow">品牌解析</span>
+        <h2 class="bhj-h2">把一道盖饭，讲成一个值得信赖的内容生态</h2>
+        <p>推特黑椒盖饭并不是一个只做菜谱的品牌。我们更愿意把自己理解为一家以黑椒盖饭为原点的影像内容企业：以真实厨房为拍摄现场，以家庭灶台为叙事场景，以每一位愿意下厨的人为潜在创作者。品牌官网在这里承担的不只是展示职能，更是一个持续运营的内容生态入口——你可以在官方网站上找到系统的料理拆解、完整的食材溯源记录、创作者的真实工作流，以及无数普通人做出一碗好吃盖饭的瞬间。</p>
+        <p>黑椒盖饭看起来是一道简单的家常菜，但它的复杂度藏在细节里。黑胡椒的产地差异会让香气从木质转向柑橘；现磨与预磨的颗粒粗细，决定了辛香是浮在表面还是沉进酱汁；米饭的水量、温度、蓬松度，会决定盖浇之后是吸汁还是糊底；而收汁阶段的火候，往往只差十几秒，就会从挂勺变成发苦。这些细节不是玄学，而是可以拆解、可以被反复验证的经验。推特黑椒盖饭过去七年做的事，就是把这些经验一句一句说清楚，一帧一帧拍明白。</p>
+        <h3>为什么从黑椒盖饭开始</h3>
+        <p>2019 年冬天，品牌团队还在做一档综合美食内容，选题越铺越宽，播放数据却越来越散。一次内部复盘会上，有人提出一个尖锐的问题：如果有人搜黑椒盖饭，我们能不能成为那个最值得被点开的结果？这个问题后来变成了品牌的起点。团队决定收缩战线，把所有精力集中在这一道菜上，先把一种酱汁讲到极致，再把一种厨房生活方式讲透。</p>
+        <p>这个决定在当时并不被看好。有人担心单一品类天花板太低，有人担心内容很快会枯竭。但七年过去，内容库累积了一千八百多条原创影像，从越南富国岛的胡椒园，到广东小城的一口老炒锅，从厨师长的手部特写，到租房青年的电磁炉实验，题材反而越挖越深。垂直领域的价值在今天被反复验证：越专注，越能被信赖；越具体，越有影响力。</p>
+        <h3>我们坚持的三件事</h3>
+        <ul>
+          <li><strong>真实优先。</strong>所有影像都在真实厨房完成，不搭景、不摆拍、不用不可复现的技巧制造惊艳。失败了也保留，因为失败的画面同样有参考价值。</li>
+          <li><strong>正版高清。</strong>品牌官网提供的每一支内容均为原创正版，画质统一在高清标准以上，方便反复暂停、逐帧观察火候与油温。</li>
+          <li><strong>创作者共生。</strong>平台与创作者不是简单的采买关系。我们提供拍摄支持、脚本打磨与收益分成，让认真做饭的人可以靠内容获得体面回报。</li>
+        </ul>
+        <div class="bhj-quote">
+          <p>“一碗黑椒盖饭最好的状态，不是看起来多高级，而是吃到最后一口还是热的。”——品牌内容手册第一页</p>
+        </div>
+        <h3>内容是怎么被生产出来的</h3>
+        <p>一支标准的推特黑椒盖饭影像，从立项到上线通常需要 21 天。前 3 天确定命题与知识点，确保这支片子在已有内容库中没有重复；接着 5 天完成食材与器具准备，包括黑胡椒的产地挑选、米饭品种测试、锅具适配；正式拍摄集中在 2 天内完成，机位以手部特写、锅内视角和成品平铺三条线并行；后期剪辑平均耗时 6 天，重点处理节奏与信息密度，保证观众在不被信息淹没的前提下看懂关键动作；最后 3 天由内容审核组与外部厨师顾问交叉复核，确认表述准确、无夸大、可复现。</p>
+        <p>这套流程听起来笨重，但它保证了一件事：每一个被说出口的判断，都至少被验证过三次。黑椒要先放还是后放、黄油能不能换猪油、隔夜饭怎么处理不粘锅，这些看似琐碎的问题，背后都有成组的对照实验。品牌的口碑不是靠一句口号建立的，而是靠这些具体到克与秒的答案一点点积累起来。</p>
+        <h3>社区里正在发生什么</h3>
+        <p>在官方网站的社区板块，每天都有新的上传与讨论。有人分享自己用小电饭煲做盖饭的极限方案，有人记录为家人做病号饭时如何减盐减辣，也有人在评论区认真指出某支片子里收汁时间偏短。这些声音构成了内容生态的底色。我们并不认为创作者与观众之间存在明确的分界线；今天在评论区提问的人，明天可能就上传了自己的第一支作品。</p>
+        <p>为了让这种流动持续发生，品牌定期发起比赛与挑战：春季「一口锅计划」，鼓励用单一锅具完成整餐；夏季「黑椒冷知识」，征集关于胡椒产地与风味的有趣发现；秋季「家庭复刻挑战」，用同一份配方在不同厨房完成复刻并公开对比；冬季「一锅到底」，记录寒冷季节里最暖的一顿饭。每一期都有公开报名、清晰规则与公开投票，赢家获得的不是奖品堆砌，而是被更多认真的人看见。</p>
+        <h3>关于未来</h3>
+        <p>接下来一年，品牌会把重心放在三件事上：其一，完善食材溯源影像库，让每一粒黑胡椒都能追溯到具体的产区与农户；其二，持续投入创作者培养，把拍摄、剪辑、脚本的经验开放成可下载的公开文档；其三，把内容生态从单一平台延展到线下，与城市里的小餐馆、社区厨房合作，让影像里的味道真正被吃到。我们相信，一个品牌的力量不来自声量，而来自它是否真的让生活变好了一点点。</p>
+        <p>如果你也相信一碗饭可以认真对待，欢迎在这个官方网站留下你的第一支作品。无论是十六秒的手机记录，还是二十分钟的完整拆解，只要真实、有用、有温度，这里就有它的位置。推特黑椒盖饭会继续深耕这一口锅，继续把火候、香气与人情味拍给更多人看。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 焦点影像 ================= -->
+<section class="bhj-section bhj-section--tint" id="bhj-focus">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">焦点影像</span>
+        <h2 class="bhj-h2">本期主推：黑椒盖饭的六种完成度</h2>
+        <p class="bhj-lead">从快手工作餐到周末犒赏版，六支原创高清短片拆解同一道菜的六种路径。点击卡片上的收藏按钮，可以把它们收进你的待看清单。</p>
+      </div>
+      <a class="bhj-btn bhj-btn--line" href="#bhj-topics">查看全部专题</a>
+    </div>
+    <div class="bhj-focus-grid">
+      <article class="bhj-focus-main">
+        <div class="bhj-card">
+          <div class="bhj-cover">
+            <span class="bhj-cover-tag">本周主推</span>
+            <img alt="铸铁锅里黑椒汁收浓包裹牛肉的近距离特写" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235a2f14'/%3E%3Cstop offset='1' stop-color='%23291609'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23a1)'/%3E%3Cellipse cx='400' cy='330' rx='270' ry='190' fill='%231c0f06'/%3E%3Cellipse cx='400' cy='322' rx='244' ry='168' fill='%232b1a0b'/%3E%3Cellipse cx='400' cy='316' rx='212' ry='144' fill='%23442a12'/%3E%3Cg fill='%238a5a2a'%3E%3Cellipse cx='340' cy='290' rx='62' ry='36' transform='rotate(-16 340 290)'/%3E%3Cellipse cx='452' cy='316' rx='70' ry='38' transform='rotate(12 452 316)'/%3E%3Cellipse cx='386' cy='372' rx='58' ry='32' transform='rotate(-4 386 372)'/%3E%3C/g%3E%3Cg fill='%23c99a5c' opacity='0.85'%3E%3Cellipse cx='326' cy='282' rx='34' ry='15' transform='rotate(-16 326 282)'/%3E%3Cellipse cx='466' cy='310' rx='38' ry='16' transform='rotate(12 466 310)'/%3E%3C/g%3E%3Cg fill='%23f2c878' opacity='0.5'%3E%3Ccircle cx='300' cy='238' r='4'/%3E%3Ccircle cx='470' cy='236' r='3'/%3E%3Ccircle cx='520' cy='330' r='3'/%3E%3C/g%3E%3Cg stroke='%23e8d8b8' stroke-width='4' opacity='0.22'%3E%3Cpath d='M240 200q90-60 180-20'/%3E%3Cpath d='M420 430q90 20 160-30'/%3E%3C/g%3E%3Ccircle cx='400' cy='318' r='246' fill='none' stroke='%23f2b551' stroke-width='2' opacity='0.35'/%3E%3C/svg%3E">
+            <span class="bhj-cover-dur">18:42</span>
+            <span class="bhj-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="bhj-card-body">
+            <h3>黑椒汁收浓的三个临界点：挂勺、回亮与离火</h3>
+            <p class="bhj-card-desc">本片用三个对照锅同时拍摄，把收汁这件“凭感觉”的事拆成可以观察的颜色与气泡变化。附完整配方卡与火力对照表，适合已经会做但总觉得差一点的人。</p>
+            <div class="bhj-tags"><span class="bhj-tag">教程干货</span><span class="bhj-tag">火候</span><span class="bhj-tag">对照实验</span></div>
+            <div class="bhj-card-meta">
+              <span class="bhj-avatar bhj-avatar--a">老</span>
+              <span>老锅实验室</span>
+              <span>·</span><span>11 月 18 日</span>
+              <div class="bhj-card-actions">
+                <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>1.2k</span></button>
+                <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">食材溯源</span>
+          <img alt="胡椒园藤蔓上挂满黑胡椒果穗的产地影像" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='p1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%235d7d4a'/%3E%3Cstop offset='1' stop-color='%232e4023'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23p1)'/%3E%3Cg stroke='%23425c32' stroke-width='10' stroke-linecap='round' fill='none'%3E%3Cpath d='M80 450q60-180 130-260'/%3E%3Cpath d='M300 450q20-200 120-300'/%3E%3Cpath d='M520 450q-10-190 90-280'/%3E%3Cpath d='M700 450q-40-160 30-250'/%3E%3C/g%3E%3Cg fill='%23a8b86a'%3E%3Cellipse cx='150' cy='300' rx='44' ry='18' transform='rotate(-34 150 300)'/%3E%3Cellipse cx='372' cy='262' rx='48' ry='19' transform='rotate(-48 372 262)'/%3E%3Cellipse cx='596' cy='288' rx='46' ry='18' transform='rotate(30 596 288)'/%3E%3Cellipse cx='716' cy='300' rx='40' ry='16' transform='rotate(-36 716 300)'/%3E%3C/g%3E%3Cg fill='%23342010'%3E%3Ccircle cx='200' cy='216' r='9'/%3E%3Ccircle cx='214' cy='236' r='8'/%3E%3Ccircle cx='192' cy='250' r='8'/%3E%3Ccircle cx='424' cy='188' r='9'/%3E%3Ccircle cx='438' cy='208' r='8'/%3E%3Ccircle cx='412' cy='222' r='8'/%3E%3Ccircle cx='642' cy='212' r='9'/%3E%3Ccircle cx='656' cy='232' r='8'/%3E%3C/g%3E%3Cg fill='%23e8dfa8' opacity='0.5'%3E%3Ccircle cx='100' cy='120' r='3'/%3E%3Ccircle cx='360' cy='90' r='3'/%3E%3Ccircle cx='620' cy='110' r='3'/%3E%3Ccircle cx='740' cy='60' r='2'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">12:06</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>从富国岛到你的研磨器：一粒黑胡椒的旅程</h3>
+          <p class="bhj-card-desc">产地拍摄与风味对照，解释为什么同一道菜换一种胡椒会完全不同。</p>
+          <div class="bhj-tags"><span class="bhj-tag">在地文化</span><span class="bhj-tag">溯源</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--b">胡</span>
+            <span>胡椒地图</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>876</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">人物访谈</span>
+          <img alt="深夜小餐馆里厨师端着黑椒盖饭的工作场景" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='k1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231f1408'/%3E%3Cstop offset='1' stop-color='%234a2c15'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23k1)'/%3E%3Crect x='80' y='150' width='640' height='14' rx='7' fill='%23a8783f'/%3E%3Crect x='80' y='164' width='640' height='94' fill='%232b1a0b'/%3E%3Cg fill='%23f2b551' opacity='0.85'%3E%3Ccircle cx='220' cy='96' r='14'/%3E%3Ccircle cx='560' cy='96' r='14'/%3E%3C/g%3E%3Cg fill='%23301d0e'%3E%3Ccircle cx='300' cy='230' r='34'/%3E%3Crect x='256' y='262' width='88' height='102' rx='26'/%3E%3Ccircle cx='470' cy='246' r='28'/%3E%3Crect x='434' y='272' width='72' height='92' rx='22'/%3E%3C/g%3E%3Cg fill='%23f4e3c2'%3E%3Cellipse cx='400' cy='330' rx='62' ry='24'/%3E%3Cellipse cx='400' cy='320' rx='62' ry='24'/%3E%3C/g%3E%3Cg fill='%236b3b1a'%3E%3Ccircle cx='378' cy='312' r='8'/%3E%3Ccircle cx='420' cy='316' r='7'/%3E%3Ccircle cx='398' cy='326' r='8'/%3E%3C/g%3E%3Crect x='612' y='200' width='60' height='120' rx='10' fill='%235a2f14' opacity='0.7'/%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">22:31</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>开了十九年小馆的阿德：盖饭是给赶时间的人留的温柔</h3>
+          <p class="bhj-card-desc">一位城市夜宵摊主的日常记录，从备料到凌晨收摊，聊他为什么只做一道盖饭。</p>
+          <div class="bhj-tags"><span class="bhj-tag">情感故事</span><span class="bhj-tag">城市探索</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--c">阿</span>
+            <span>夜宵档案</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>2.4k</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">深度测评</span>
+          <img alt="六口不同材质锅具并排对比的测评现场" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f0e2ca'/%3E%3Crect y='300' width='800' height='150' fill='%23d9c3a0'/%3E%3Cg%3E%3Ccircle cx='150' cy='260' r='62' fill='%234a4a4a'/%3E%3Ccircle cx='150' cy='260' r='50' fill='%23707070'/%3E%3Ccircle cx='300' cy='260' r='62' fill='%238a5a2a'/%3E%3Ccircle cx='300' cy='260' r='50' fill='%23a8763c'/%3E%3Ccircle cx='450' cy='260' r='62' fill='%23655f56'/%3E%3Ccircle cx='450' cy='260' r='50' fill='%238c857a'/%3E%3Ccircle cx='600' cy='260' r='62' fill='%23b8b0a2'/%3E%3Ccircle cx='600' cy='260' r='50' fill='%23ded6c6'/%3E%3C/g%3E%3Cg fill='%231c1c1c'%3E%3Crect x='126' y='150' width='48' height='12' rx='6'/%3E%3Crect x='426' y='150' width='48' height='12' rx='6'/%3E%3C/g%3E%3Cg fill='%23c4482c'%3E%3Ccircle cx='150' cy='258' r='7'/%3E%3Ccircle cx='300' cy='262' r='7'/%3E%3Ccircle cx='450' cy='256' r='7'/%3E%3C/g%3E%3Ctext x='400' y='410' font-size='26' text-anchor='middle' fill='%235a3c1c' font-family='sans-serif'%3E4 vs 6 vs 8 mm%3C/text%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">15:18</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>不粘锅、铸铁锅、碳钢锅：做黑椒盖饭到底该用哪一口</h3>
+          <p class="bhj-card-desc">四口锅、同配方、同火力，从焦香、挂汁与清洗成本三个维度做横向对比。</p>
+          <div class="bhj-tags"><span class="bhj-tag">深度测评</span><span class="bhj-tag">器具</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--d">器</span>
+            <span>厨房器具志</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>1.6k</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">快手日常</span>
+          <img alt="出租屋小电饭煲旁摆着米饭和黑椒酱料的画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e8ecdf'/%3E%3Crect y='320' width='800' height='130' fill='%23cfd8c0'/%3E%3Crect x='250' y='170' width='300' height='170' rx='42' fill='%23f5f6f1' stroke='%23b9c2ab' stroke-width='4'/%3E%3Crect x='286' y='132' width='228' height='50' rx='22' fill='%23e3e6da' stroke='%23b9c2ab' stroke-width='4'/%3E%3Ccircle cx='400' cy='228' r='16' fill='%23c4482c'/%3E%3Crect x='300' y='256' width='200' height='10' rx='5' fill='%23cfd8c0'/%3E%3Crect x='580' y='250' width='150' height='90' rx='12' fill='%23f4e3c2'/%3E%3Crect x='596' y='266' width='118' height='12' rx='6' fill='%23e2cfab'/%3E%3Crect x='596' y='288' width='90' height='10' rx='5' fill='%23e2cfab'/%3E%3Ccircle cx='96' cy='120' r='46' fill='%23f2b551' opacity='0.6'/%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">06:44</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>只有一口小电饭煲，也能吃到像样的黑椒盖饭</h3>
+          <p class="bhj-card-desc">写给租房青年的极限方案：不粘锅替代、预制酱汁比例、三分钟收尾流程。</p>
+          <div class="bhj-tags"><span class="bhj-tag">实用技巧</span><span class="bhj-tag">租房</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--e">租</span>
+            <span>六平米厨房</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>3.1k</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 专题企划 ================= -->
+<section class="bhj-section" id="bhj-topics">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">专题企划</span>
+        <h2 class="bhj-h2">正在更新的四组原创企划</h2>
+        <p class="bhj-lead">每个专题由品牌编辑组与外部创作者共同策划，持续补充新的影像条目与文字记录。更新节奏公开透明，你可以随时回来看进度。</p>
+      </div>
+    </div>
+    <div class="bhj-topics">
+      <article class="bhj-topic">
+        <img class="bhj-topic-bg" alt="冬季灶台上一锅冒着热气的黑椒盖饭专题封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233a2c4a'/%3E%3Cstop offset='1' stop-color='%231a1224'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23w1)'/%3E%3Cg fill='%23e8dfc8' opacity='0.22'%3E%3Ccircle cx='90' cy='60' r='4'/%3E%3Ccircle cx='200' cy='40' r='3'/%3E%3Ccircle cx='460' cy='70' r='4'/%3E%3Ccircle cx='540' cy='30' r='3'/%3E%3Ccircle cx='320' cy='90' r='3'/%3E%3C/g%3E%3Cellipse cx='300' cy='300' rx='160' ry='60' fill='%23f2b551' opacity='0.28'/%3E%3Ccircle cx='300' cy='286' r='92' fill='%231c1209'/%3E%3Ccircle cx='300' cy='278' r='80' fill='%23f4e3c2'/%3E%3Cg fill='%236b3b1a'%3E%3Ccircle cx='276' cy='264' r='13'/%3E%3Ccircle cx='322' cy='272' r='12'/%3E%3Ccircle cx='300' cy='300' r='11'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='3' opacity='0.35' fill='none'%3E%3Cpath d='M262 220q14-34 0-56'/%3E%3Cpath d='M300 214q16-38 0-62'/%3E%3Cpath d='M338 220q14-34 0-56'/%3E%3C/g%3E%3C/svg%3E">
+        <span class="bhj-topic-status">更新至 12 期</span>
+        <h3>一锅到底 · 冬季暖食企划</h3>
+        <p>用一口锅完成整餐，收录寒夜里最踏实的十二种盖饭做法。</p>
+      </article>
+      <article class="bhj-topic">
+        <img class="bhj-topic-bg" alt="记录不同家庭厨房真实模样的拍摄企划封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23f2e6d2'/%3E%3Crect y='300' width='600' height='100' fill='%23dcc7a6'/%3E%3Cg%3E%3Crect x='60' y='150' width='120' height='150' fill='%23e9d6b8' stroke='%23c2a880' stroke-width='3'/%3E%3Crect x='240' y='120' width='140' height='180' fill='%23f7efdf' stroke='%23c2a880' stroke-width='3'/%3E%3Crect x='440' y='170' width='110' height='130' fill='%23e2cbaa' stroke='%23c2a880' stroke-width='3'/%3E%3C/g%3E%3Cg fill='%23a8763c'%3E%3Crect x='80' y='190' width='80' height='8' rx='4'/%3E%3Crect x='80' y='212' width='60' height='8' rx='4'/%3E%3Crect x='266' y='160' width='90' height='8' rx='4'/%3E%3Crect x='266' y='184' width='70' height='8' rx='4'/%3E%3Crect x='460' y='206' width='70' height='7' rx='4'/%3E%3C/g%3E%3Ccircle cx='510' cy='80' r='34' fill='%23f0b95e' opacity='0.7'/%3E%3C/svg%3E">
+        <span class="bhj-topic-status">更新至 7 期</span>
+        <h3>家里那口锅 · 家庭厨房影像档案</h3>
+        <p>走进不同人的厨房，记录灶台、调料罐与做饭习惯里的生活史。</p>
+      </article>
+      <article class="bhj-topic">
+        <img class="bhj-topic-bg" alt="黑胡椒产地农户在田间采收的纪录企划封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%238fa86a'/%3E%3Crect y='250' width='600' height='150' fill='%236d8a4c'/%3E%3Cg stroke='%23425c32' stroke-width='7' stroke-linecap='round' fill='none'%3E%3Cpath d='M120 400q10-120 60-190'/%3E%3Cpath d='M300 400q-6-130 50-200'/%3E%3Cpath d='M480 400q-4-120 44-180'/%3E%3C/g%3E%3Cg fill='%23342010'%3E%3Ccircle cx='170' cy='250' r='7'/%3E%3Ccircle cx='182' cy='266' r='6'/%3E%3Ccircle cx='344' cy='240' r='7'/%3E%3Ccircle cx='356' cy='256' r='6'/%3E%3Ccircle cx='520' cy='258' r='7'/%3E%3C/g%3E%3Cg fill='%23f2e6c8' opacity='0.6'%3E%3Ccircle cx='80' cy='70' r='40'/%3E%3C/g%3E%3C/svg%3E">
+        <span class="bhj-topic-status">更新至 9 期</span>
+        <h3>一粒胡椒的旅行 · 食材溯源项目</h3>
+        <p>从产区到研磨器，把香料贸易链条上被忽略的人与故事拍下来。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 创作者矩阵 ================= -->
+<section class="bhj-section bhj-section--dark" id="bhj-creators">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">创作者矩阵</span>
+        <h2 class="bhj-h2">让认真做饭的人被更多人看见</h2>
+        <p class="bhj-lead">品牌签约创作者覆盖厨师、家庭主厨、影像作者与食材研究者。点击头像旁的姓名可查看完整档案与代表作清单。</p>
+      </div>
+      <button class="bhj-btn bhj-btn--amber" type="button" data-bhj-join>申请加入创作计划</button>
+    </div>
+    <div class="bhj-creators">
+      <article class="bhj-creator">
+        <div class="bhj-creator-top">
+          <span class="bhj-avatar bhj-avatar--a">老</span>
+          <div>
+            <h3><button type="button" data-bhj-profile="老锅实验室">老锅实验室</button></h3>
+            <span class="bhj-creator-field">火候研究 · 对照实验</span>
+          </div>
+        </div>
+        <p>前餐厅后厨主管，习惯用两组以上对照来解释每一个判断。作品以严谨著称，配方表精确到克与摄氏度。</p>
+        <div class="bhj-creator-foot"><span>作品 <b>214</b></span><span>关注 <b>18.6万</b></span></div>
+      </article>
+      <article class="bhj-creator">
+        <div class="bhj-creator-top">
+          <span class="bhj-avatar bhj-avatar--b">胡</span>
+          <div>
+            <h3><button type="button" data-bhj-profile="胡椒地图">胡椒地图</button></h3>
+            <span class="bhj-creator-field">食材溯源 · 在地文化</span>
+          </div>
+        </div>
+        <p>长期在东南亚与西南山区拍摄香料产地，擅长把风味差异讲成地理与人的故事，影像克制而有温度。</p>
+        <div class="bhj-creator-foot"><span>作品 <b>96</b></span><span>关注 <b>9.2万</b></span></div>
+      </article>
+      <article class="bhj-creator">
+        <div class="bhj-creator-top">
+          <span class="bhj-avatar bhj-avatar--c">阿</span>
+          <div>
+            <h3><button type="button" data-bhj-profile="夜宵档案">夜宵档案</button></h3>
+            <span class="bhj-creator-field">城市探索 · 人物访谈</span>
+          </div>
+        </div>
+        <p>专注夜宵摊与深夜小馆的记录者，常用一支麦克风与一台手持机，拍下城市最松弛的几个小时。</p>
+        <div class="bhj-creator-foot"><span>作品 <b>138</b></span><span>关注 <b>22.4万</b></span></div>
+      </article>
+      <article class="bhj-creator">
+        <div class="bhj-creator-top">
+          <span class="bhj-avatar bhj-avatar--d">器</span>
+          <div>
+            <h3><button type="button" data-bhj-profile="厨房器具志">厨房器具志</button></h3>
+            <span class="bhj-creator-field">深度测评 · 器具</span>
+          </div>
+        </div>
+        <p>把锅具当作工具来研究的人。测评不接商业推广，所有结论都有可复现的测试流程与失败样本。</p>
+        <div class="bhj-creator-foot"><span>作品 <b>72</b></span><span>关注 <b>7.8万</b></span></div>
+      </article>
+      <article class="bhj-creator">
+        <div class="bhj-creator-top">
+          <span class="bhj-avatar bhj-avatar--e">租</span>
+          <div>
+            <h3><button type="button" data-bhj-profile="六平米厨房">六平米厨房</button></h3>
+            <span class="bhj-creator-field">实用技巧 · 租房日常</span>
+          </div>
+        </div>
+        <p>在六平米出租屋里做饭的普通上班族，擅长用小家电与最少的器具，完成体面的日常一餐。</p>
+        <div class="bhj-creator-foot"><span>作品 <b>156</b></span><span>关注 <b>31.5万</b></span></div>
+      </article>
+      <article class="bhj-creator">
+        <div class="bhj-creator-top">
+          <span class="bhj-avatar bhj-avatar--f">慢</span>
+          <div>
+            <h3><button type="button" data-bhj-profile="慢炖笔记">慢炖笔记</button></h3>
+            <span class="bhj-creator-field">治愈影像 · 生活方式</span>
+          </div>
+        </div>
+        <p>以长镜头与自然声记录厨房的安静时刻，作品节奏舒缓，适合在一天结束时慢慢看完。</p>
+        <div class="bhj-creator-foot"><span>作品 <b>84</b></span><span>关注 <b>12.1万</b></span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 热门视频流 + 作品墙 ================= -->
+<section class="bhj-section" id="bhj-videos">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">热门视频流</span>
+        <h2 class="bhj-h2">这一周被反复回看的四支作品</h2>
+        <p class="bhj-lead">按真实播放与完成度综合排序，每周一更新。你可以用卡片右下角的按钮收藏，或点亮喜欢告诉创作者你看到了。</p>
+      </div>
+      <a class="bhj-btn bhj-btn--line" href="#bhj-wall">进入影像墙</a>
+    </div>
+    <div class="bhj-video-grid">
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">教程</span>
+          <img alt="砧板上现磨黑胡椒颗粒的特写镜头" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%233f2a17'/%3E%3Crect y='330' width='800' height='120' fill='%235a3c1c'/%3E%3Crect x='200' y='150' width='300' height='190' rx='16' fill='%23c9a06a'/%3E%3Crect x='216' y='166' width='268' height='158' rx='10' fill='%23e0be8a'/%3E%3Cg fill='%23301d0e'%3E%3Ccircle cx='280' cy='230' r='9'/%3E%3Ccircle cx='320' cy='252' r='8'/%3E%3Ccircle cx='368' cy='216' r='9'/%3E%3Ccircle cx='410' cy='262' r='8'/%3E%3Ccircle cx='440' cy='220' r='7'/%3E%3Ccircle cx='252' cy='282' r='7'/%3E%3C/g%3E%3Cg fill='%23e8d0a2'%3E%3Ccircle cx='300' cy='268' r='5'/%3E%3Ccircle cx='392' cy='282' r='5'/%3E%3C/g%3E%3Crect x='540' y='120' width='90' height='220' rx='18' fill='%232b1a0b'/%3E%3Crect x='558' y='150' width='54' height='30' rx='8' fill='%238a6a42'/%3E%3Crect x='558' y='200' width='54' height='90' rx='8' fill='%23a8885c'/%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">09:12</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>现磨与预磨的差距有多大：一次盲测</h3>
+          <p class="bhj-card-desc">同一配方、同一锅温，只换胡椒形态，请五位食客盲测并说出差异。</p>
+          <div class="bhj-tags"><span class="bhj-tag">知识科普</span><span class="bhj-tag">风味</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--a">老</span><span>老锅实验室</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>986</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">日常</span>
+          <img alt="晨光下厨房窗台上一碗配菜齐全的盖饭" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f4ecd8'/%3E%3Crect x='0' y='300' width='800' height='150' fill='%23e0d0ae'/%3E%3Crect x='80' y='70' width='200' height='190' rx='8' fill='%23dfeaf0' stroke='%23b9ccd6' stroke-width='6'/%3E%3Cpath d='M80 70 L280 260 M280 70 L80 260' stroke='%23b9ccd6' stroke-width='6'/%3E%3Cg%3E%3Ccircle cx='430' cy='300' r='86' fill='%23ffffff'/%3E%3Ccircle cx='430' cy='296' r='70' fill='%23fbf6e8'/%3E%3C/g%3E%3Cg fill='%236b3b1a'%3E%3Ccircle cx='404' cy='280' r='13'/%3E%3Ccircle cx='452' cy='290' r='12'/%3E%3Ccircle cx='428' cy='318' r='11'/%3E%3C/g%3E%3Cg fill='%235d7d4a'%3E%3Cpath d='M488 268q22-16 34 2-16 14-34-2z'/%3E%3Cpath d='M372 322q-22-12-32 6 18 12 32-6z'/%3E%3C/g%3E%3Crect x='560' y='240' width='140' height='90' rx='14' fill='%23f4e3c2'/%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">04:38</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>给加班回来的人留一碗：十六分钟的晚饭记录</h3>
+          <p class="bhj-card-desc">没有台词，只有切菜、起锅与吃饭的声音。适合当作背景音慢慢看。</p>
+          <div class="bhj-tags"><span class="bhj-tag">日常记录</span><span class="bhj-tag">治愈影像</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--f">慢</span><span>慢炖笔记</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>2.8k</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">幕后</span>
+          <img alt="拍摄现场的灯光、补光板与摄像机布置" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23241c14'/%3E%3Crect y='340' width='800' height='110' fill='%233a2c1e'/%3E%3Cg%3E%3Crect x='140' y='140' width='190' height='120' rx='12' fill='%234a4038'/%3E%3Ccircle cx='235' cy='200' r='40' fill='%23302a24'/%3E%3Ccircle cx='235' cy='200' r='26' fill='%23607a8a'/%3E%3Crect x='300' y='176' width='60' height='52' rx='8' fill='%233a322b'/%3E%3Crect x='150' y='262' width='14' height='80' fill='%234a4038'/%3E%3Crect x='306' y='262' width='14' height='80' fill='%234a4038'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='600' cy='170' r='52' fill='%23f2b551' opacity='0.9'/%3E%3Ccircle cx='600' cy='170' r='70' fill='%23f2b551' opacity='0.2'/%3E%3Crect x='590' y='222' width='20' height='120' fill='%234a4038'/%3E%3C/g%3E%3Crect x='430' y='300' width='180' height='16' rx='8' fill='%235a4a38'/%3E%3Crect x='450' y='252' width='120' height='52' rx='10' fill='%23e8dccb'/%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">11:05</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>一支盖饭短片是怎么拍出来的：灯光、机位与调味节奏</h3>
+          <p class="bhj-card-desc">内部创作流程首次完整公开，含设备清单与拍摄脚本思路，欢迎下载参考。</p>
+          <div class="bhj-tags"><span class="bhj-tag">创作幕后</span><span class="bhj-tag">攻略</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--d">器</span><span>厨房器具志</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>742</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="bhj-card">
+        <div class="bhj-cover">
+          <span class="bhj-cover-tag">同好</span>
+          <img alt="几位朋友围坐在桌边分享不同版本盖饭的场景" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e6d8bf'/%3E%3Crect y='290' width='800' height='160' fill='%23c9ad84'/%3E%3Cellipse cx='400' cy='316' rx='300' ry='52' fill='%23a8885c'/%3E%3Cg fill='%23fbf6e8'%3E%3Ccircle cx='230' cy='300' r='48'/%3E%3Ccircle cx='400' cy='286' r='52'/%3E%3Ccircle cx='570' cy='300' r='48'/%3E%3C/g%3E%3Cg fill='%236b3b1a'%3E%3Ccircle cx='214' cy='290' r='9'/%3E%3Ccircle cx='246' cy='300' r='8'/%3E%3Ccircle cx='386' cy='274' r='10'/%3E%3Ccircle cx='418' cy='288' r='9'/%3E%3Ccircle cx='556' cy='296' r='9'/%3E%3Ccircle cx='586' cy='306' r='8'/%3E%3C/g%3E%3Cg fill='%233a2c1e'%3E%3Ccircle cx='120' cy='240' r='24'/%3E%3Ccircle cx='680' cy='246' r='22'/%3E%3C/g%3E%3Cg fill='%23f2b551' opacity='0.8'%3E%3Ccircle cx='90' cy='80' r='26'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="bhj-cover-dur">07:26</span>
+          <span class="bhj-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="bhj-card-body">
+          <h3>六个人、六口锅、同一份配方：家庭复刻挑战结果</h3>
+          <p class="bhj-card-desc">同一配方在不同厨房会走向哪里？六位同好交出了完全不同的答案。</p>
+          <div class="bhj-tags"><span class="bhj-tag">挑战</span><span class="bhj-tag">兴趣同好</span></div>
+          <div class="bhj-card-meta">
+            <span class="bhj-avatar bhj-avatar--e">租</span><span>六平米厨房</span>
+            <div class="bhj-card-actions">
+              <button class="bhj-icon-btn" data-bhj-like type="button" aria-label="点赞">♥ <span>1.9k</span></button>
+              <button class="bhj-icon-btn" data-bhj-fav type="button" aria-label="收藏">☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 影像墙 ================= -->
+<section class="bhj-section bhj-section--tint" id="bhj-wall">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">用户作品墙</span>
+        <h2 class="bhj-h2">来自社区的真实一餐</h2>
+        <p class="bhj-lead">以下影像由社区用户上传，经授权在品牌官网展示。点击任意一张可查看拍摄者的说明与器材信息。</p>
+      </div>
+    </div>
+    <div class="bhj-wall">
+      <figure class="bhj-wall-item bhj-wall-item--wide">
+        <img alt="周末家庭餐桌上摆着四份不同配菜的黑椒盖饭" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23f2e4cc'/%3E%3Crect y='270' width='800' height='130' fill='%23d8bd94'/%3E%3Cg fill='%23fbf6e8'%3E%3Ccircle cx='180' cy='268' r='62'/%3E%3Ccircle cx='360' cy='262' r='66'/%3E%3Ccircle cx='546' cy='270' r='60'/%3E%3Ccircle cx='694' cy='278' r='48'/%3E%3C/g%3E%3Cg fill='%236b3b1a'%3E%3Ccircle cx='160' cy='256' r='12'/%3E%3Ccircle cx='200' cy='272' r='11'/%3E%3Ccircle cx='340' cy='250' r='13'/%3E%3Ccircle cx='384' cy='266' r='12'/%3E%3Ccircle cx='528' cy='260' r='11'/%3E%3Ccircle cx='566' cy='274' r='10'/%3E%3C/g%3E%3Cg fill='%235d7d4a'%3E%3Ccircle cx='214' cy='242' r='7'/%3E%3Ccircle cx='404' cy='290' r='7'/%3E%3Ccircle cx='576' cy='248' r='6'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>周末四口之家的黑椒盖饭 · 拍摄者：林间小路</figcaption>
+      </figure>
+      <figure class="bhj-wall-item bhj-wall-item--tall">
+        <img alt="俯拍视角下一碗撒满黑椒与葱花的盖饭" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 800'%3E%3Crect width='400' height='800' fill='%23e8d9bf'/%3E%3Ccircle cx='200' cy='420' r='150' fill='%23fbf6e8' stroke='%23ffffff' stroke-width='14'/%3E%3Ccircle cx='200' cy='420' r='124' fill='%23f6edd8'/%3E%3Cg fill='%236b3b1a'%3E%3Ccircle cx='160' cy='386' r='20'/%3E%3Ccircle cx='238' cy='400' r='18'/%3E%3Ccircle cx='196' cy='452' r='20'/%3E%3Ccircle cx='252' cy='462' r='15'/%3E%3C/g%3E%3Cg fill='%235d7d4a'%3E%3Ccircle cx='150' cy='446' r='8'/%3E%3Ccircle cx='222' cy='360' r='7'/%3E%3C/g%3E%3Crect x='70' y='660' width='260' height='10' rx='5' fill='%23c9a86b'/%3E%3C/svg%3E">
+        <figcaption>俯拍 · 一碗没有摆盘的晚饭</figcaption>
+      </figure>
+      <figure class="bhj-wall-item">
+        <img alt="厨房台面上正在研磨黑胡椒的木质研磨器" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23584233'/%3E%3Crect y='280' width='400' height='120' fill='%23725a44'/%3E%3Crect x='170' y='70' width='60' height='180' rx='14' fill='%23b98d55'/%3E%3Crect x='182' y='120' width='36' height='70' rx='6' fill='%23d8b27e'/%3E%3Ccircle cx='200' cy='62' r='22' fill='%23301d0e'/%3E%3Cg fill='%232b1a0b'%3E%3Ccircle cx='150' cy='268' r='6'/%3E%3Ccircle cx='230' cy='274' r='5'/%3E%3Ccircle cx='196' cy='292' r='6'/%3E%3Ccircle cx='256' cy='258' r='4'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>研磨器与散落的胡椒粒</figcaption>
+      </figure>
+      <figure class="bhj-wall-item">
+        <img alt="刚出锅的黑椒牛肉盖饭冒着热气的侧面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23d9c7a8'/%3E%3Crect y='300' width='400' height='100' fill='%23b89b74'/%3E%3Cellipse cx='200' cy='312' rx='130' ry='36' fill='%23ffffff'/%3E%3Cellipse cx='200' cy='296' rx='118' ry='34' fill='%23f6edd8'/%3E%3Cellipse cx='200' cy='276' rx='110' ry='32' fill='%236b3b1a'/%3E%3Cg fill='%23c99a5c'%3E%3Cellipse cx='160' cy='268' rx='30' ry='12'/%3E%3Cellipse cx='242' cy='272' rx='28' ry='11'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='3' opacity='0.4' fill='none'%3E%3Cpath d='M150 240q10-30 0-46'/%3E%3Cpath d='M200 232q12-34 0-52'/%3E%3Cpath d='M250 240q10-30 0-46'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>热气未散 · 拍摄者：加班的阿青</figcaption>
+      </figure>
+      <figure class="bhj-wall-item bhj-wall-item--wide">
+        <img alt="小餐馆后厨备料台上一排整齐的黑椒酱料罐" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23302a24'/%3E%3Crect y='300' width='800' height='100' fill='%23484038'/%3E%3Cg%3E%3Crect x='90' y='150' width='90' height='150' rx='10' fill='%23e8dccb'/%3E%3Crect x='220' y='170' width='90' height='130' rx='10' fill='%23d9c8ae'/%3E%3Crect x='350' y='140' width='90' height='160' rx='10' fill='%23f2e6d0'/%3E%3Crect x='480' y='168' width='90' height='132' rx='10' fill='%23e0cfb4'/%3E%3Crect x='610' y='156' width='90' height='144' rx='10' fill='%23efe3cd'/%3E%3C/g%3E%3Cg fill='%234a3a28'%3E%3Crect x='104' y='176' width='62' height='14' rx='7'/%3E%3Crect x='234' y='196' width='62' height='13' rx='6'/%3E%3Crect x='364' y='168' width='62' height='14' rx='7'/%3E%3Crect x='494' y='192' width='62' height='13' rx='6'/%3E%3Crect x='624' y='182' width='62' height='14' rx='7'/%3E%3C/g%3E%3Cg fill='%23302010'%3E%3Crect x='112' y='240' width='46' height='40' rx='4' opacity='0.7'/%3E%3Crect x='372' y='228' width='46' height='52' rx='4' opacity='0.7'/%3E%3Crect x='632' y='244' width='46' height='36' rx='4' opacity='0.7'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>后厨备料台 · 拍摄者：阿德的徒弟</figcaption>
+      </figure>
+      <figure class="bhj-wall-item">
+        <img alt="雨夜窗边一个人吃黑椒盖饭的安静画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23283a44'/%3E%3Crect x='30' y='40' width='150' height='180' rx='6' fill='%234f6a78'/%3E%3Cpath d='M30 40 L180 220 M180 40 L30 220' stroke='%23283a44' stroke-width='6'/%3E%3Cg stroke='%23a8c2cc' stroke-width='2' opacity='0.5'%3E%3Cpath d='M60 60 L46 110'/%3E%3Cpath d='M100 70 L86 120'/%3E%3Cpath d='M140 56 L126 106'/%3E%3C/g%3E%3Ccircle cx='250' cy='280' r='72' fill='%23f2e4cc'/%3E%3Ccircle cx='250' cy='274' r='56' fill='%236b3b1a'/%3E%3Ccircle cx='250' cy='292' r='34' fill='%23fbf6e8'/%3E%3Crect y='350' width='400' height='50' fill='%231d2b33'/%3E%3C/svg%3E">
+        <figcaption>雨夜的晚饭 · 拍摄者：匿名食客</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 用户评价 ================= -->
+<section class="bhj-section" id="bhj-reviews">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">社区口碑</span>
+        <h2 class="bhj-h2">他们在官方网站留下了这些话</h2>
+        <p class="bhj-lead">评价来自站内用户的真实留言，品牌不删改、不筛选，只做基本的合规校验。</p>
+      </div>
+    </div>
+    <div class="bhj-reviews">
+      <article class="bhj-review">
+        <div class="bhj-review-head">
+          <span class="bhj-avatar bhj-avatar--a">康</span>
+          <div><b>康先生下厨</b><span>关注两年</span></div>
+          <span class="bhj-review-stars">★★★★★</span>
+        </div>
+        <p>收汁那期我反复看了四遍，按照片子里的气泡大小判断离火，第一次做出了不苦的黑椒酱。这种把经验讲清楚的内容太少了。</p>
+        <em>来自《黑椒汁收浓的三个临界点》留言区</em>
+      </article>
+      <article class="bhj-review">
+        <div class="bhj-review-head">
+          <span class="bhj-avatar bhj-avatar--b">小</span>
+          <div><b>小满的厨房</b><span>关注八个月</span></div>
+          <span class="bhj-review-stars">★★★★★</span>
+        </div>
+        <p>最打动我的是他们也拍失败。有一支片子直接把酱汁烧苦了，然后解释原因。那一刻我觉得这个品牌是真诚的。</p>
+        <em>来自《家里那口锅》专题留言</em>
+      </article>
+      <article class="bhj-review">
+        <div class="bhj-review-head">
+          <span class="bhj-avatar bhj-avatar--c">夜</span>
+          <div><b>夜行者阿哲</b><span>关注三年</span></div>
+          <span class="bhj-review-stars">★★★★☆</span>
+        </div>
+        <p>夜宵档案系列是我的睡前固定节目。不过希望能多拍一些南方小城，目前城市分布还是偏向几个大城市。</p>
+        <em>来自创作者档案页留言</em>
+      </article>
+      <article class="bhj-review">
+        <div class="bhj-review-head">
+          <span class="bhj-avatar bhj-avatar--d">陈</span>
+          <div><b>陈老师的餐桌</b><span>关注一年半</span></div>
+          <span class="bhj-review-stars">★★★★★</span>
+        </div>
+        <p>我在中学教劳动课，直接拿这里的器具测评当教材素材。讲解准确，没有夸大，学生也看得进去。</p>
+        <em>来自《不粘锅、铸铁锅还是碳钢锅》留言区</em>
+      </article>
+      <article class="bhj-review">
+        <div class="bhj-review-head">
+          <span class="bhj-avatar bhj-avatar--e">六</span>
+          <div><b>六平米住户</b><span>关注半年</span></div>
+          <span class="bhj-review-stars">★★★★★</span>
+        </div>
+        <p>租房党真的被照顾到了。小电饭煲那期我照着做成了，虽然卖相一般，但那一刻觉得生活还不错。</p>
+        <em>来自投稿审核通过的作者留言</em>
+      </article>
+      <article class="bhj-review">
+        <div class="bhj-review-head">
+          <span class="bhj-avatar bhj-avatar--f">林</span>
+          <div><b>林间小路</b><span>关注四年</span></div>
+          <span class="bhj-review-stars">★★★★☆</span>
+        </div>
+        <p>整体品质很稳，正版清晰度也够。唯一建议是专题更新提示可以再明显一点，有时候会错过新的一期。</p>
+        <em>来自企业动态页留言</em>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 创作灵感 ================= -->
+<section class="bhj-section bhj-section--tint" id="bhj-ideas">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">创作灵感</span>
+        <h2 class="bhj-h2">准备投稿，但不知道从哪拍起？</h2>
+        <p class="bhj-lead">品牌编辑部整理了四组常用切入点，每一组都附有可下载的选题清单与剪辑参考。上传前先看看，命中率会更高。</p>
+      </div>
+      <button class="bhj-btn bhj-btn--amber" type="button" id="bhj-submit-btn-2">上传我的作品</button>
+    </div>
+    <div class="bhj-ideas">
+      <article class="bhj-idea">
+        <span class="bhj-idea-icon" aria-hidden="true">✎</span>
+        <div>
+          <h3>从一个具体错误切入</h3>
+          <p>比如“为什么我的黑椒酱总是发苦”“米饭总是糊底”。先给结论，再复盘过程，观众留存通常最好。</p>
+          <button class="bhj-idea-btn" type="button" data-bhj-idea="我们整理了一份《十个常见黑椒盖饭失败现场》选题清单，包含画面建议与拍摄顺序，可在投稿弹窗中获取。">获取选题清单 →</button>
+        </div>
+      </article>
+      <article class="bhj-idea">
+        <span class="bhj-idea-icon" aria-hidden="true">◐</span>
+        <div>
+          <h3>用声音撑起一支短片</h3>
+          <p>研磨声、油锅声、铲子碰锅壁的声音，都是黑椒盖饭最有辨识度的素材。少说话，多留环境音。</p>
+          <button class="bhj-idea-btn" type="button" data-bhj-idea="环境音采集建议：距离锅沿 20 厘米、避免风噪、单独录 30 秒静场，剪辑时会更自如。">查看采集建议 →</button>
+        </div>
+      </article>
+      <article class="bhj-idea">
+        <span class="bhj-idea-icon" aria-hidden="true">◇</span>
+        <div>
+          <h3>把失败样本也留下</h3>
+          <p>品牌不会因为一次失败拒绝作品。相反，能解释清楚失败原因的影像，往往比成功版本更有参考价值。</p>
+          <button class="bhj-idea-btn" type="button" data-bhj-idea="投稿时可在备注里写明“含失败对照”，审核组会优先安排专业顾问给出反馈意见。">了解投稿备注规范 →</button>
+        </div>
+      </article>
+      <article class="bhj-idea">
+        <span class="bhj-idea-icon" aria-hidden="true">☰</span>
+        <div>
+          <h3>加入公开的比赛与挑战</h3>
+          <p>每季一期主题挑战，规则清晰、公开投票。获奖作品会进入品牌首页焦点位，并获得持续分成。</p>
+          <button class="bhj-idea-btn" type="button" data-bhj-idea="本季挑战主题「一锅到底」正在报名，截止 12 月 20 日，单支作品时长建议 3 至 12 分钟。">查看本季挑战规则 →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 企业动态 ================= -->
+<section class="bhj-section" id="bhj-news">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">企业动态</span>
+        <h2 class="bhj-h2">官方发布与内容更新日志</h2>
+        <p class="bhj-lead">品牌的重要公告、内容库更新与线下活动，都会在这里按时间倒序登记，方便你回查。</p>
+      </div>
+    </div>
+    <div class="bhj-news">
+      <article class="bhj-news-item">
+        <span class="bhj-news-date">2026 / 11 / 18</span>
+        <div>
+          <h3>冬季专题《一锅到底》正式上线</h3>
+          <p>共收录 12 支原创影像，覆盖铸铁锅、砂锅与电饭煲三类器具路径。</p>
+        </div>
+        <span class="bhj-news-badge">官方发布</span>
+      </article>
+      <article class="bhj-news-item">
+        <span class="bhj-news-date">2026 / 11 / 15</span>
+        <div>
+          <h3>品牌故事影片《从一粒黑胡椒开始》完成首映</h3>
+          <p>影片跟随三位产区农户的日常，记录了香料从采收到干燥的完整过程。</p>
+        </div>
+        <span class="bhj-news-badge">品牌故事</span>
+      </article>
+      <article class="bhj-news-item">
+        <span class="bhj-news-date">2026 / 11 / 11</span>
+        <div>
+          <h3>社区投稿通道开放，本月主题「家里那口锅」</h3>
+          <p>投稿需为原创作品，时长 1 至 20 分钟，审核周期通常为五个工作日。</p>
+        </div>
+        <span class="bhj-news-badge">社区公告</span>
+      </article>
+      <article class="bhj-news-item">
+        <span class="bhj-news-date">2026 / 11 / 06</span>
+        <div>
+          <h3>创作者扶持计划第二期开始报名</h3>
+          <p>面向家庭主厨与影像新人，提供拍摄设备借用、脚本辅导与保底收益支持。</p>
+        </div>
+        <span class="bhj-news-badge">比赛报名</span>
+      </article>
+      <article class="bhj-news-item">
+        <span class="bhj-news-date">2026 / 10 / 30</span>
+        <div>
+          <h3>内容库完成一次全量画质复核</h3>
+          <p>共复核 1860 支影像，统一高清标准与字幕规范，部分早期作品重新上线。</p>
+        </div>
+        <span class="bhj-news-badge">品质维护</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 合作品牌 ================= -->
+<section class="bhj-section bhj-section--tint" id="bhj-partners">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">合作伙伴</span>
+        <h2 class="bhj-h2">与认真做事的品牌同行</h2>
+        <p class="bhj-lead">合作以内容共创与真实测评为主，品牌官网不发布未经验证的功效表述，所有商业合作均会在内容页明确标注。</p>
+      </div>
+    </div>
+    <div class="bhj-partners">
+      <a class="bhj-partner" href="#bhj-contact">山野胡椒社</a>
+      <a class="bhj-partner" href="#bhj-contact">南岸陶器</a>
+      <a class="bhj-partner" href="#bhj-contact">小城粮油</a>
+      <a class="bhj-partner" href="#bhj-contact">夜灯食材</a>
+      <a class="bhj-partner" href="#bhj-contact">铁与木工坊</a>
+      <a class="bhj-partner" href="#bhj-contact">慢磨香辛</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="bhj-section" id="bhj-faq">
+  <div class="bhj-wrap">
+    <div class="bhj-head-row">
+      <div>
+        <span class="bhj-eyebrow">帮助中心</span>
+        <h2 class="bhj-h2">常见问题</h2>
+        <p class="bhj-lead">关于投稿、版权与内容使用的说明。如果这里没有你想要的答案，可以通过页面底部的联系方式找到我们。</p>
+      </div>
+    </div>
+    <div class="bhj-faq">
+      <details open>
+        <summary>如何向品牌投稿自己的黑椒盖饭影像？</summary>
+        <p>点击页面任意“投稿”按钮即可打开投稿说明。需为原创作品，画面清晰、声音可辨，建议时长 3 至 12 分钟。投稿后由编辑组初审，再由食材与料理顾问复核，通常五个工作日内给出反馈。</p>
+      </details>
+      <details>
+        <summary>作品的版权归谁？品牌会如何使用？</summary>
+        <p>版权始终归创作者所有。品牌在获得书面授权后，会在官方网站及关联渠道进行展示与推荐，并明确标注作者信息。任何涉及商业使用的场景都会单独沟通并另行结算。</p>
+      </details>
+      <details>
+        <summary>没有专业设备，手机拍摄可以投稿吗？</summary>
+        <p>完全可以。品牌内容库里相当比例的作品来自手机拍摄。比起设备，我们更看重内容是否真实、有用。建议使用自然光、稳定器或简单固定支架，并单独录制环境音以提升观感。</p>
+      </details>
+      <details>
+        <summary>签约创作者需要满足什么条件？</summary>
+        <p>持续更新能力、稳定的内容质量与真实可信的表达是三个核心标准。我们不看粉丝数量，更关注作品是否帮助了具体的人。每年开放两期申请，可关注企业动态获取报名入口。</p>
+      </details>
+      <details>
+        <summary>品牌如何保证内容中的料理结论可靠？</summary>
+        <p>所有涉及火候、配比、器具对比的结论，都需通过至少一次对照实验并有可复现的流程记录。内容上线前由外部厨师顾问交叉复核，若后续发现偏差会在原页面更新勘误说明。</p>
+      </details>
+      <details>
+        <summary>视频中的配方可以用于餐馆经营吗？</summary>
+        <p>家庭使用与学习复刻无需额外授权。若用于商业经营，请在保持配方核心逻辑的前提下进行自主调整，并建议通过联系邮箱告知我们，以便提供必要的技术支持与风险提示。</p>
+      </details>
+      <details>
+        <summary>合作与商务洽谈应该联系谁？</summary>
+        <p>请通过页面底部的官方邮箱联系品牌商务组，并在邮件标题中注明合作类型与时间预期。我们会在三个工作日内回复，对暂无合作空间的提案也会给出简要说明。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 联系 / CTA ================= -->
+<section class="bhj-section" id="bhj-contact">
+  <div class="bhj-wrap">
+    <div class="bhj-cta">
+      <div>
+        <h2>把一碗好吃的黑椒盖饭，拍给更多人看</h2>
+        <p>品牌长期开放投稿与合作。无论你是家庭主厨、影像作者、食材从业者，还是只想记录一次成功的晚饭，这里都欢迎你的加入。</p>
+      </div>
+      <div class="bhj-cta-actions">
+        <button class="bhj-btn bhj-btn--amber" type="button" id="bhj-cta-submit">立即投稿</button>
+        <button class="bhj-btn bhj-btn--line" type="button" data-bhj-share>分享本页</button>
+      </div>
+    </div>
+    <div class="bhj-contact-grid">
+      <div class="bhj-contact-item">
+        <b>品牌商务合作</b>
+        <span>brand@tuitei-bhj.example</span>
+      </div>
+      <div class="bhj-contact-item">
+        <b>内容投稿咨询</b>
+        <span>submit@tuitei-bhj.example</span>
+      </div>
+      <div class="bhj-contact-item">
+        <b>工作时间</b>
+        <span>周一至周五 10:00 - 19:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 页脚 ================= -->
+<footer class="bhj-footer">
+  <div class="bhj-wrap">
+    <div class="bhj-footer-grid">
+      <div class="bhj-footer-brand">
+        <b>推特黑椒盖饭</b>
+        <p>以黑椒盖饭为原点的视频内容品牌，以真实厨房为拍摄现场，把火候、香气与人情味拍给更多人看。这里是品牌官方网站，持续运营、持续更新。</p>
+        <p>官方网站 · 原创正版 · 高清呈现</p>
+      </div>
+      <div>
+        <h3>内容</h3>
+        <ul>
+          <li><a href="#bhj-focus">焦点影像</a></li>
+          <li><a href="#bhj-topics">专题企划</a></li>
+          <li><a href="#bhj-videos">热门视频</a></li>
+          <li><a href="#bhj-wall">用户作品墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于</h3>
+        <ul>
+          <li><a href="#bhj-about">品牌解析</a></li>
+          <li><a href="#bhj-creators">创作者矩阵</a></li>
+          <li><a href="#bhj-news">企业动态</a></li>
+          <li><a href="#bhj-partners">合作伙伴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>支持</h3>
+        <ul>
+          <li><a href="#bhj-faq">帮助中心</a></li>
+          <li><a href="#bhj-ideas">创作灵感</a></li>
+          <li><a href="#bhj-contact">联系我们</a></li>
+          <li><a href="#bhj-reviews">社区口碑</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bhj-footer-bottom">
+      <span>© 2019 - 2026 推特黑椒盖饭 版权所有 · 官方网站 · 备案号：沪 ICP 备 2019000000 号</span>
+      <span>品牌内容均为原创，未经授权请勿转载 · 用户至上，匠心以待</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= Toast / 弹窗 / 回到顶部 ================= -->
+<div class="bhj-toast" id="bhj-toast" role="status" aria-live="polite"></div>
+
+<div class="bhj-modal" id="bhj-modal" role="dialog" aria-modal="true" aria-labelledby="bhj-modal-title">
+  <div class="bhj-modal-card">
+    <button class="bhj-modal-close" id="bhj-modal-close" type="button" aria-label="关闭">×</button>
+    <h3 id="bhj-modal-title">投稿</h3>
+    <p id="bhj-modal-desc">请填写基本信息，编辑组会在五个工作日内与你联系。</p>
+    <div id="bhj-modal-body"></div>
+  </div>
+</div>
+
+<button class="bhj-top-btn" id="bhj-top-btn" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具：Toast ---------- */
+  var toastEl = document.getElementById("bhj-toast");
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-show"); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById("bhj-burger");
+  var mobileNav = document.getElementById("bhj-mobile-nav");
+  burger.addEventListener("click", function(){
+    var open = mobileNav.classList.toggle("is-open");
+    burger.classList.toggle("is-open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  mobileNav.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      mobileNav.classList.remove("is-open");
+      burger.classList.remove("is-open");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchForm = document.getElementById("bhj-search-form");
+  var searchInput = document.getElementById("bhj-search-input");
+  var searchTip = document.getElementById("bhj-search-tip");
+  var searchPool = [
+    "黑椒汁收浓的三个临界点",
+    "从富国岛到你的研磨器",
+    "不粘锅、铸铁锅还是碳钢锅",
+    "六平米厨房系列",
+    "一锅到底 · 冬季暖食企划",
+    "老锅实验室",
+    "夜宵档案"
+  ];
+  function runSearch(q){
+    q = (q || "").trim();
+    if(!q){
+      searchTip.classList.remove("is-open");
+      return;
+    }
+    var hits = searchPool.filter(function(item){ return item.indexOf(q) > -1; });
+    if(hits.length){
+      searchTip.innerHTML = "找到 <b>" + hits.length + "</b> 条相关内容：" + hits.slice(0,3).map(function(h){
+        return "<div style='padding:3px 0'>· " + h + "</div>";
+      }).join("");
+    }else{
+      searchTip.innerHTML = "未找到「<b>" + q + "</b>」的直接结果，试试“黑椒汁”“锅具”“专题”等关键词。";
+    }
+    searchTip.classList.add("is-open");
+  }
+  searchForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    runSearch(searchInput.value);
+    showToast("已为你检索站内内容");
+  });
+  searchInput.addEventListener("input", function(){
+    if(searchInput.value.trim().length >= 1){ runSearch(searchInput.value); }
+    else{ searchTip.classList.remove("is-open"); }
+  });
+  document.addEventListener("click", function(e){
+    if(!searchForm.contains(e.target)){ searchTip.classList.remove("is-open"); }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll("[data-bhj-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var span = btn.querySelector("span");
+      var raw = span.textContent;
+      var num = parseFloat(raw);
+      var unit = raw.replace(/[\d.]/g,"");
+      if(btn.classList.contains("is-active")){
+        btn.classList.remove("is-active");
+        num = Math.max(0, num - 1);
+        showToast("已取消喜欢");
+      }else{
+        btn.classList.add("is-active");
+        num = num + 1;
+        showToast("已点亮喜欢，创作者会看到");
+      }
+      span.textContent = (num % 1 === 0 ? num : num.toFixed(1)) + unit;
+    });
+  });
+  document.querySelectorAll("[data-bhj-fav]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      if(btn.classList.contains("is-active")){
+        btn.classList.remove("is-active");
+        btn.textContent = "☆";
+        showToast("已从待看清单移除");
+      }else{
+        btn.classList.add("is-active");
+        btn.textContent = "★";
+        showToast("已收进待看清单");
+      }
+    });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-bhj-count]");
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-bhj-count"),10);
+      var start = 0;
+      var dur = 1100;
+      var t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(start + (target - start) * eased).toLocaleString("zh-CN");
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, {threshold:.4});
+    io.observe(document.querySelector(".bhj-hero-stats"));
+  }else{
+    runCounters();
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("bhj-top-btn");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 520){ topBtn.classList.add("is-show"); }
+    else{ topBtn.classList.remove("is-show"); }
+  });
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var modal = document.getElementById("bhj-modal");
+  var modalTitle = document.getElementById("bhj-modal-title");
+  var modalDesc = document.getElementById("bhj-modal-desc");
+  var modalBody = document.getElementById("bhj-modal-body");
+  var modalClose = document.getElementById("bhj-modal-close");
+  function openModal(title, desc, bodyHTML){
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modalBody.innerHTML = bodyHTML;
+    modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    modal.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+  modalClose.addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" && modal.classList.contains("is-open")) closeModal(); });
+
+  /* ---------- 投稿弹窗 ---------- */
+  var submitFormHTML =
+    '<div class="bhj-field"><label for="bhj-m-name">作品名称</label><input id="bhj-m-name" type="text" placeholder="例如：我的第三十次收汁实验"></div>' +
+    '<div class="bhj-field"><label for="bhj-m-author">作者昵称</label><input id="bhj-m-author" type="text" placeholder="将展示在作品页"></div>' +
+    '<div class="bhj-field"><label for="bhj-m-link">作品说明</label><textarea id="bhj-m-link" placeholder="简单描述拍摄内容、器具与想解决的问题"></textarea></div>' +
+    '<div class="bhj-field"><label for="bhj-m-type">作品类型</label><select id="bhj-m-type"><option>教程拆解</option><option>日常记录</option><option>器具测评</option><option>人物故事</option><option>其他</option></select></div>' +
+    '<button class="bhj-btn bhj-btn--amber" type="button" id="bhj-m-submit" style="width:100%;justify-content:center">提交投稿信息</button>';
+  function openSubmit(){
+    openModal("作品投稿", "请填写基本信息，编辑组会在五个工作日内与你联系。所有投稿需为原创作品。", submitFormHTML);
+    var btn = document.getElementById("bhj-m-submit");
+    btn.addEventListener("click", function(){
+      var name = document.getElementById("bhj-m-name").value.trim();
+      var author = document.getElementById("bhj-m-author").value.trim();
+      if(!name || !author){
+        showToast("请先填写作品名称与作者昵称");
+        return;
+      }
+      closeModal();
+      showToast("投稿信息已记录，感谢你的上传");
+    });
+  }
+  ["bhj-submit-btn","bhj-submit-btn-2","bhj-cta-submit"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el){ el.addEventListener("click", openSubmit); }
+  });
+
+  /* ---------- 分享弹窗 ---------- */
+  var shareHTML =
+    '<div class="bhj-share-row">' +
+      '<button class="bhj-share-btn" type="button" data-share="微信">微信</button>' +
+      '<button class="bhj-share-btn" type="button" data-share="微博">微博</button>' +
+      '<button class="bhj-share-btn" type="button" data-share="QQ">QQ</button>' +
+    '</div>' +
+    '<div class="bhj-copy-row">' +
+      '<input id="bhj-copy-input" type="text" readonly value="推特黑椒盖饭 · 品牌官方网站 · 把一碗好吃的盖饭拍给更多人看">' +
+      '<button class="bhj-btn bhj-btn--line" type="button" id="bhj-copy-btn">复制</button>' +
+    '</div>';
+  document.querySelectorAll("[data-bhj-share]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("分享本页", "把这份关于黑椒盖饭的记录，转给同样认真吃饭的人。", shareHTML);
+      document.querySelectorAll("[data-share]").forEach(function(sb){
+        sb.addEventListener("click", function(){
+          showToast("已生成" + sb.getAttribute("data-share") + "分享卡片");
+        });
+      });
+      var copyBtn = document.getElementById("bhj-copy-btn");
+      var copyInput = document.getElementById("bhj-copy-input");
+      copyBtn.addEventListener("click", function(){
+        copyInput.select();
+        copyInput.setSelectionRange(0, 99999);
+        var ok = false;
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(copyInput.value).then(function(){
+            showToast("链接已复制到剪贴板");
+          }).catch(function(){
+            document.execCommand("copy");
+            showToast("链接已复制到剪贴板");
+          });
+          ok = true;
+        }
+        if(!ok){
+          try{ document.execCommand("copy"); showToast("链接已复制到剪贴板"); }
+          catch(err){ showToast("复制失败，请手动选择文本"); }
+        }
+      });
+    });
+  });
+
+  /* ---------- 创作者档案 ---------- */
+  var profileData = {
+    "老锅实验室":"前餐厅后厨主管，2019 年加入品牌。擅长用对照实验解释火候问题，代表作《黑椒汁收浓的三个临界点》《现磨与预磨的差距有多大》。内容风格严谨，配方精确到克与摄氏度。",
+    "胡椒地图":"长期拍摄东南亚与西南山区的香料产地，关注风味背后的人与地理。代表作《从富国岛到你的研磨器》《雨季前的胡椒园》。影像克制，现场声保留完整。",
+    "夜宵档案":"专注夜宵摊与深夜小馆的记录者，常在凌晨开工。代表作《开了十九年小馆的阿德》《凌晨三点的炒饭声》。善于在短对话里留下生活质感。",
+    "厨房器具志":"把锅具当工具研究的人，测评不接商业推广。代表作《不粘锅、铸铁锅还是碳钢锅》《一口好锅的重量》。测试流程全部公开，可复现。",
+    "六平米厨房":"在六平米出租屋做饭的上班族，代表作《只有一口小电饭煲，也能吃到像样的黑椒盖饭》《给加班回来的人留一碗》。内容实用，适合新手。",
+    "慢炖笔记":"以长镜头与自然声记录厨房安静时刻，代表作《雨天的炖锅》《一个人的午后厨房》。节奏舒缓，适合作为睡前影像。"
+  };
+  document.querySelectorAll("[data-bhj-profile]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var name = btn.getAttribute("data-bhj-profile");
+      var desc = profileData[name] || "该创作者的完整档案正在整理中。";
+      openModal(name, "品牌签约创作者 · 完整档案", '<p style="font-size:14px;line-height:1.9;color:#4b3826">' + desc + '</p><button class="bhj-btn bhj-btn--primary" type="button" style="width:100%;justify-content:center;margin-top:8px" onclick="document.getElementById(\'bhj-modal-close\').click()">关闭档案</button>');
+    });
+  });
+
+  /* ---------- 创作灵感提示 ---------- */
+  document.querySelectorAll("[data-bhj-idea]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var text = btn.getAttribute("data-bhj-idea");
+      openModal("创作提示", "来自品牌编辑部的实用建议", '<p style="font-size:14px;line-height:1.9;color:#4b3826">' + text + '</p><button class="bhj-btn bhj-btn--amber" type="button" style="width:100%;justify-content:center;margin-top:8px" onclick="document.getElementById(\'bhj-modal-close\').click()">知道了</button>');
+    });
+  });
+
+  /* ---------- 申请加入 ---------- */
+  document.querySelectorAll("[data-bhj-join]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("创作者扶持计划", "第二期正在报名，面向家庭主厨与影像新人。", '<div class="bhj-field"><label for="bhj-j-name">昵称</label><input id="bhj-j-name" type="text" placeholder="你的创作者昵称"></div><div class="bhj-field"><label for="bhj-j-field">擅长方向</label><input id="bhj-j-field" type="text" placeholder="例如：教程拆解 / 城市探索 / 器具测评"></div><button class="bhj-btn bhj-btn--amber" type="button" id="bhj-j-submit" style="width:100%;justify-content:center">提交报名意向</button>');
+      document.getElementById("bhj-j-submit").addEventListener("click", function(){
+        var n = document.getElementById("bhj-j-name").value.trim();
+        if(!n){ showToast("请先填写昵称"); return; }
+        closeModal();
+        showToast("报名意向已提交，请留意站内通知");
+      });
+    });
+  });
+
+  /* ---------- 卡片悬停动效增强（触屏设备跳过） ---------- */
+  if(window.matchMedia("(hover:hover)").matches){
+    document.querySelectorAll(".bhj-card, .bhj-topic, .bhj-creator, .bhj-review").forEach(function(card){
+      card.addEventListener("mouseenter", function(){ card.style.willChange = "transform"; });
+    });
+  }
+})();
+</script>
+</body>
+                </html>
